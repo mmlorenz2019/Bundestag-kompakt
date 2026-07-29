@@ -6,7 +6,7 @@ const path = require("path");
 
 const RAW_DIR = path.join(__dirname, "..", "data", "raw");
 const ENTRIES_DIR = path.join(__dirname, "..", "data", "entries");
-const MODEL = "claude-sonnet-5-20250929";
+const MODEL = "claude-sonnet-5";
 
 const SYSTEM_PROMPT = `Du fasst Bundestags-Vorgänge für eine App namens "Bundestag-Kompakt" zusammen.
 Zielgruppe: Bürger:innen ohne Vorwissen, die kompakt mitbekommen wollen, was im Bundestag passiert.
@@ -51,7 +51,8 @@ async function summarizeOne(raw) {
 
   if (!res.ok) throw new Error(`Anthropic API Fehler: HTTP ${res.status} ${await res.text()}`);
   const data = await res.json();
-  const text = data.content.map((block) => block.text).join("");
+  let text = data.content.map((block) => block.text).join("").trim();
+  text = text.replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "");
   return JSON.parse(text);
 }
 
