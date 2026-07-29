@@ -1,0 +1,59 @@
+{
+  "docid": "1070",
+  "url": "https://bundestagszusammenfasser.de/details?docid=1070",
+  "scrapedAt": "2026-07-29T23:02:33.776Z",
+  "title": "Gesetz zur Stärkung der Meinungsfreiheit und zur Änderung der Strafprozessordnung - Einschränkung der Zulässigkeit der Hausdurchsuchung bei Ehrverletzungsdelikten",
+  "statusImageAlt": "keine Grafik",
+  "sections": {
+    "Basics": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Offizieller Titel": "Gesetz zur Stärkung der Meinungsfreiheit und zur Änderung der Strafprozessordnung - Einschränkung der Zulässigkeit der Hausdurchsuchung bei Ehrverletzungsdelikten",
+            "Initiator": "AfD",
+            "Status": "Im Bundestag eingegangen",
+            "Letzte Änderung": "10.10.2025",
+            "Drucksache": {
+              "text": "21/2085 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/020/2102085.pdf"
+            },
+            "Gesetztyp": "Zustimmungsgesetz",
+            "Exekutiver Fußabdruck": "❌ Nicht vorhanden.",
+            "Verbändebeteiligung": "Kein Zeitraum angegeben."
+          }
+        }
+      ],
+      "text": null
+    },
+    "Zusammenfassung": {
+      "tables": [],
+      "text": "Diese Zusammenfassung wurde mit GPT4 erstellt und kann Fehler enthalten.Basisinformationen:\nDas wesentliche Ziel des Gesetzentwurfs ist es, die Meinungsfreiheit zu stärken, indem Hausdurchsuchungen bei Ehrverletzungsdelikten (z.B. Beleidigungen) künftig nicht mehr zulässig sind. Die Lösung besteht darin, die Strafprozessordnung so zu ändern, dass bei diesen Delikten keine Hausdurchsuchungen mehr angeordnet werden dürfen. Der Entwurf stammt von Abgeordneten der AfD-Fraktion, nicht von der Bundesregierung; ein federführendes Ministerium ist daher nicht zuständig.\nHintergrund:\nDer Entwurf verweist auf eine starke Zunahme von Strafanzeigen und Zivilverfahren wegen angeblicher Beleidigungen von Politikern in sozialen Medien. Besonders hervorgehoben wird, dass Politiker und deren Teams systematisch nach beleidigenden Äußerungen suchen und diese verfolgen, während Privatpersonen bei ähnlichen Delikten meist nicht verfolgt werden. Es wird auf eine bundesweite Durchsuchungsaktion im Dezember 2024 verwiesen, die als repressives Signal gegen „Hass im Netz“ gewertet wird. Der Entwurf kritisiert, dass solche Maßnahmen einen „chilling effect“ auf die Meinungsfreiheit haben und sieht darin einen Missbrauch des Strafrechts sowie eine Gefahr für das Vertrauen in den Rechtsstaat.\nKosten:\nEs entstehen laut Gesetzentwurf keine Kosten für den Bundeshaushalt oder die Länder. Es werden keine Einnahmen erwartet.\nInkrafttreten:\nKeine Angaben.\nSonstiges:\nDer Entwurf betont die Dringlichkeit („dringend geboten“) der Gesetzesänderung und sieht keine Alternativen. Es wird darauf hingewiesen, dass die vorgeschlagene Änderung mit EU-Recht und völkerrechtlichen Verträgen vereinbar ist. Der Entwurf hebt hervor, dass die Maßnahme das Vertrauen in den Rechtsstaat stärken und die Grundrechte auf Meinungsfreiheit und Unverletzlichkeit der Wohnung schützen soll. Ein besonderer Hinweis ist, dass keine neuen Bürokratiekosten oder Erfüllungsaufwände für Bürger, Wirtschaft oder Verwaltung entstehen.\nMaßnahmen:\nHier sind die wichtigsten Maßnahmen des Gesetzentwurfs in Stichpunkten:\n- Durchsuchungen bei Verdacht ausschließlich auf Ehrverletzungsdelikte (Vierzehnter Abschnitt des Strafgesetzbuchs) sind nicht zulässig.\n- Durchsuchungen bei Dritten (anderen Personen) sind ebenfalls nicht zulässig, wenn sie ausschließlich wegen Ehrverletzungsdelikten angeordnet werden sollen.\n- Durchsuchungen von Räumen zur Nachtzeit sind nicht zulässig, wenn sie ausschließlich wegen Ehrverletzungsdelikten angeordnet werden sollen."
+    },
+    "Beratungsverlauf im Bundestag": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Eingang im Bundestag": "08.10.2025",
+            "Drucksache": {
+              "text": "21/2085 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/020/2102085.pdf"
+            }
+          }
+        }
+      ],
+      "text": null
+    },
+    "Weiterführende Links": {
+      "tables": [],
+      "text": "Vorgangseite auf bundestag.de"
+    }
+  },
+  "listRowCells": [
+    "Keine Änderung seit mehr als 90 Tagen",
+    "08.10.2025",
+    "Gesetz zur Stärkung der Meinungsfreiheit und zur Änderung der Strafprozessordnung - Einschränkung der Zulässigkeit der Hausdurchsuchung bei Ehrverletzungsdelikten",
+    "AfD"
+  ]
+}

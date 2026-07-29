@@ -1,0 +1,119 @@
+{
+  "docid": "1187",
+  "url": "https://bundestagszusammenfasser.de/details?docid=1187",
+  "scrapedAt": "2026-07-29T23:02:45.265Z",
+  "title": "Gesetz über den automatischen Austausch von Informationen über Einkünfte mittels digitaler Plattformen",
+  "statusImageAlt": "Der Entwurf ist im Bundestag eingegangen, wurde dort aber noch nicht beraten.",
+  "sections": {
+    "Basics": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Offizieller Titel": "Gesetz zu der Mehrseitigen Vereinbarung vom 22. Juni 2021 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen über Einkünfte, die mittels digitaler Plattformen erzielt wurden",
+            "Initiator": {
+              "text": "Bundesministerium für Finanzen",
+              "href": "https://bundestagszusammenfasser.de/bmdetails?bmid=6"
+            },
+            "Status": "Im Bundestag eingegangen",
+            "Letzte Änderung": "17.07.2026",
+            "Entwurf PDF": {
+              "text": "Download Entwurf",
+              "href": "https://bundestagszusammenfasser.de/wp-content/uploads/rewp21/1187_Referentenentwurf.pdf"
+            },
+            "Drucksache": {
+              "text": "21/7193 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/071/2107193.pdf"
+            },
+            "Synopse": "nicht erforderlich",
+            "Gesetztyp": "Einspruchsgesetz",
+            "Status Bundesrat": "Beraten",
+            "Verbändebeteiligung": "Keine Verbändebeteiligung durchgeführt."
+          }
+        }
+      ],
+      "text": null
+    },
+    "Zusammenfassung": {
+      "tables": [],
+      "text": "Diese Zusammenfassung wurde mit GPT4 erstellt und kann Fehler enthalten.Basisinformationen:\nDer Gesetzentwurf setzt die am 22. Juni 2021 geschlossene Mehrseitige Vereinbarung über den automatischen Austausch von Informationen über Einkünfte, die mittels digitaler Plattformen erzielt wurden, innerstaatlich um. Ziel ist es, grenzüberschreitende Steuerhinterziehung effektiver zu bekämpfen und Steuerehrlichkeit zu fördern, indem relevante Informationen zwischen den Vertragsstaaten automatisch ausgetauscht werden. Deutschland tauscht solche Informationen bereits mit EU-Mitgliedstaaten auf Basis der DAC 7-Richtlinie aus; durch das Gesetz wird der Austausch auf Drittstaaten erweitert. Federführend zuständig ist das Bundesministerium der Finanzen.\nHintergrund:\nDer Gesetzentwurf reagiert auf das starke Wachstum der Plattformökonomie und die damit verbundenen Herausforderungen für die Steuerbehörden, insbesondere bei grenzüberschreitenden Sachverhalten und ausländischen Plattformbetreibern. Die OECD hat Mustervorschriften für die Meldung solcher Einkünfte entwickelt. Die EU hat diese mit der DAC 7-Richtlinie umgesetzt, Deutschland mit dem Plattformen-Steuertransparenzgesetz (PStTG). Die Mehrseitige Vereinbarung soll Doppelmeldungen vermeiden und den Informationsaustausch auf Drittstaaten ausweiten. Auslöser ist die Notwendigkeit, die internationale Zusammenarbeit zu stärken und bestehende Lücken bei der Besteuerung von Plattformumsätzen zu schließen.\nKosten:\nFür Bürgerinnen und Bürger sowie die Wirtschaft entsteht kein Erfüllungsaufwand. Für die Verwaltung entsteht Erfüllungsaufwand durch den Informationsaustausch, der aber bereits im Zusammenhang mit der Umsetzung der DAC 7-Richtlinie beziffert wurde. Zusätzlicher Aufwand für den Austausch mit Drittstaaten bleibt einem späteren Gesetzgebungsverfahren vorbehalten. Weitere direkte Kosten für Unternehmen, insbesondere KMU, entstehen nicht. Auswirkungen auf Preise oder das Verbraucherpreisniveau sind nicht zu erwarten. Der automatische Informationsaustausch soll zur Sicherung des deutschen Steueraufkommens beitragen; konkrete Einnahmeerwartungen werden jedoch nicht beziffert.\nInkrafttreten:\nDas Gesetz tritt am Tag nach der Verkündung in Kraft. Der genaue Zeitpunkt, zu dem die Mehrseitige Vereinbarung für Deutschland in Kraft tritt, wird im Bundesgesetzblatt bekannt gegeben.\nSonstiges:\nDer Gesetzentwurf enthält umfangreiche Datenschutzvorkehrungen und Verwendungsbeschränkungen für die ausgetauschten Daten. Die Daten dürfen nur für Besteuerungszwecke verwendet werden, nicht für andere Zwecke wie allgemeine Strafverfahren. Die Vereinbarung sieht Mechanismen zur Aussetzung oder Beendigung des Austauschs bei Datenschutzverstößen vor. Die Umsetzung ist Voraussetzung dafür, dass der Befreiungsmechanismus der DAC 7 greift und Doppelmeldungen vermieden werden. Der Entwurf wurde vom Bundesrat ohne Einwendungen zur Kenntnis genommen. Eine besondere Eilbedürftigkeit wird nicht erwähnt."
+    },
+    "Informationen aus dem Ministerium": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Datum erster Entwurf": "24.03.2026",
+            "Datum Kabinettsbeschluss": "27.05.2026",
+            "Weiterführende Informationen": {
+              "text": "Vorhabenseite des Ministeriums",
+              "href": "https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/Abteilungen/Abteilung_IV/21_Legislaturperiode/2026-03-24-Einkuenfte-digitale-Plattformen/0-Gesetz.html"
+            }
+          }
+        }
+      ],
+      "text": "„Vor dem Hintergrund der zunehmenden Digitalisierung der Wirtschaft wurden bei der OECD bereits in 2020 Mustervorschriften für Meldungen von Betreibern digitaler Plattformen (Model Rules for Reporting by Platform Operators – MRDP) erarbeitet, die anschließend auf EU-Ebene durch die DAC7 in die Amtshilferichtlinie eingeflossen sind.\nDas am 1. Januar 2023 in Kraft getretene Plattformen-Steuertransparenzgesetz (PStTG) verpflichtet in Umsetzung dieser DAC7-Vorgaben Plattformbetreiber zur jährlichen Meldung von Informationen über Umsätze, die von Anbietern über ihre Plattformen erzielt wurden, an das Bundeszentralamt für Steuern (BZSt).\nUm künftig auch mit Drittstaaten auf Basis der MRDP gemeldete Informationen zu Plattform-Umsätzen austauschen zu können, hat die Bundesregierung am 26. November 2024 die Mehrseitige Vereinbarung zwischen den zuständigen Behörden über den automatischen Austausch von Informationen über Einkünfte, die mittels digitaler Plattformen erzielt wurden, (DPI MCAA) unterzeichnet. Mit dem vorliegenden Vertragsgesetz soll die erforderliche Zustimmung der gesetzgebenden Körperschaften für die Abgabe der nach  § 7 Absatz 1 der Vereinbarung an die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung (OECD) zu übermittelnden Notifikation eingeholt werden.“"
+    },
+    "Beratungsverlauf im Bundestag": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Eingang im Bundestag": "16.07.2026",
+            "Drucksache": {
+              "text": "21/7193 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/071/2107193.pdf"
+            },
+            "Synopse": "nicht erforderlich"
+          }
+        }
+      ],
+      "text": null
+    },
+    "Beratungsverlauf im Bundesrat": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Gesetztyp": "Einspruchsgesetz",
+            "Drucksache im BR": "335/26",
+            "Eingang im Bundesrat": "29.05.2026",
+            "Erster Durchgang": {
+              "text": "10.07.2026, Stellungnahme (PDF)",
+              "href": "https://dserver.bundestag.de/brd/2026/0335-26B.pdf"
+            },
+            "Status Bundesrat": "Beraten"
+          }
+        },
+        {
+          "type": "list",
+          "headers": [
+            "Ausschusssitzungen",
+            "Sitzungsdatum",
+            "Tagesordnung (PDF)"
+          ],
+          "rows": [
+            [
+              "Finanzausschuss",
+              "26.06.2026",
+              {
+                "text": "Tagesordnung",
+                "href": "https://www.bundesrat.de/SharedDocs/auschuesse-termine/fz/termine-to/2026-06-26.html"
+              }
+            ]
+          ]
+        }
+      ],
+      "text": null
+    },
+    "Weiterführende Links": {
+      "tables": [],
+      "text": "Vorhabenseite des Ministeriums\nVorgangseite auf bundestag.de"
+    }
+  },
+  "listRowCells": [
+    "16.07.2026",
+    "Gesetz über den automatischen Austausch von Informationen über Einkünfte mittels digitaler Plattformen",
+    "BMFBundesministerium für Finanzen"
+  ]
+}

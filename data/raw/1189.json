@@ -1,0 +1,119 @@
+{
+  "docid": "1189",
+  "url": "https://bundestagszusammenfasser.de/details?docid=1189",
+  "scrapedAt": "2026-07-29T23:02:46.032Z",
+  "title": "Gesetz zur Vereinbarung über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte",
+  "statusImageAlt": "Der Entwurf ist im Bundestag eingegangen, wurde dort aber noch nicht beraten.",
+  "sections": {
+    "Basics": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Offizieller Titel": "Gesetz zu der Mehrseitigen Vereinbarung vom 8. Juni 2023 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte",
+            "Initiator": {
+              "text": "Bundesministerium für Finanzen",
+              "href": "https://bundestagszusammenfasser.de/bmdetails?bmid=6"
+            },
+            "Status": "Im Bundestag eingegangen",
+            "Letzte Änderung": "17.07.2026",
+            "Entwurf PDF": {
+              "text": "Download Entwurf",
+              "href": "https://bundestagszusammenfasser.de/wp-content/uploads/rewp21/1189_Referentenentwurf.pdf"
+            },
+            "Drucksache": {
+              "text": "21/7195 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/071/2107195.pdf"
+            },
+            "Synopse": "nicht erforderlich",
+            "Gesetztyp": "Einspruchsgesetz",
+            "Status Bundesrat": "Beraten",
+            "Verbändebeteiligung": "Keine Verbändebeteiligung durchgeführt."
+          }
+        }
+      ],
+      "text": null
+    },
+    "Zusammenfassung": {
+      "tables": [],
+      "text": "Diese Zusammenfassung wurde mit GPT4 erstellt und kann Fehler enthalten.Basisinformationen:\nDer Gesetzentwurf der Bundesregierung betrifft die Zustimmung zu einer Mehrseitigen Vereinbarung zwischen 27 Staaten über den automatischen Austausch von Informationen zu Transaktionen mit Kryptowerten (wie Bitcoin etc.). Ziel ist es, grenzüberschreitende Steuerhinterziehung zu bekämpfen und die Steuerehrlichkeit zu fördern, indem relevante Informationen über Kryptotransaktionen regelmäßig zwischen den Steuerbehörden der teilnehmenden Staaten ausgetauscht werden. Die Daten werden nur für Steuerzwecke genutzt und unterliegen strengen Datenschutzregeln. Federführend zuständig ist das Bundesministerium der Finanzen.\nHintergrund:\nDer Gesetzentwurf setzt die am 8. Juni 2023 geschlossene und am 26. November 2024 von Deutschland unterzeichnete Mehrseitige Vereinbarung um. Diese baut auf dem OECD-Rahmen (Crypto-Asset Reporting Framework, CARF) auf, der zusammen mit den G20-Staaten entwickelt wurde, um Steuervermeidung und -hinterziehung im Bereich der Kryptowerte zu bekämpfen. Die Vereinbarung ist eine Reaktion auf die zunehmende Bedeutung von Kryptowerten und die Notwendigkeit, internationale Standards für deren steuerliche Erfassung und den Informationsaustausch zu schaffen. Auslöser ist die fortschreitende Digitalisierung und Globalisierung der Finanzmärkte, insbesondere im Bereich der Kryptowerte.\nKosten:\nFür Bürgerinnen und Bürger sowie Unternehmen entstehen keine zusätzlichen Kosten oder Erfüllungsaufwände durch dieses Gesetz, da nur Behörden am Austausch beteiligt sind. Für die Verwaltung entsteht Erfüllungsaufwand, der jedoch bereits durch das Gesetz zur Umsetzung der EU-Richtlinie 2023/2226 vom 22. Dezember 2025 abgedeckt ist; durch das vorliegende Gesetz entsteht kein weiterer Mehraufwand. Es werden keine direkten Kosten für den Bundeshaushalt oder die Länder genannt. Einnahmen werden nicht beziffert, aber der automatische Informationsaustausch soll zur Sicherung des Steueraufkommens beitragen.\nInkrafttreten:\nDas Gesetz tritt am Tag nach der Verkündung in Kraft. Der Beginn des Austauschs hängt davon ab, wann die Vereinbarung für Deutschland und die jeweiligen Partnerstaaten in Kraft tritt; dies wird im Bundesgesetzblatt bekannt gegeben. Der regelmäßige Austausch der Informationen beginnt voraussichtlich ab September 2027 für das Kalenderjahr 2026.\nSonstiges:\nDer Gesetzentwurf ist Teil der internationalen Bemühungen, Steuertransparenz auch im Bereich der Kryptowerte zu schaffen. Er enthält umfangreiche Datenschutzvorkehrungen, die sicherstellen, dass die Daten nur für Steuerzwecke verwendet werden und nicht ohne Zustimmung für andere Zwecke (z.B. allgemeine Strafverfahren) genutzt werden dürfen. Die Vereinbarung kann bei Bedarf durch Verordnung des Bundesfinanzministeriums an technische oder inhaltliche Änderungen angepasst werden. Der Bundesrat hat keine Einwendungen gegen den Entwurf erhoben. Der Entwurf ist nicht als besonders eilbedürftig gekennzeichnet, aber er ist ein wichtiger Baustein zur internationalen Steuerkooperation und zur Bekämpfung von Steuerhinterziehung im Bereich der Kryptowerte."
+    },
+    "Informationen aus dem Ministerium": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Datum erster Entwurf": "24.03.2026",
+            "Datum Kabinettsbeschluss": "27.05.2026",
+            "Weiterführende Informationen": {
+              "text": "Vorhabenseite des Ministeriums",
+              "href": "https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/Abteilungen/Abteilung_IV/21_Legislaturperiode/2026-03-24-Austausch-Informationen-Kryptowerte/0-Gesetz.html"
+            }
+          }
+        }
+      ],
+      "text": "„In Reaktion auf die Verbreitung moderner Zahlungs- und Investmentmethoden, insbesondere der wachsenden Bedeutung von Kryptowerten, hat die OECD im Auftrag der G20 das Crypto-Asset Reporting Framework (CARF) entwickelt. Dieses beinhaltet neue standardisierte Sorgfalts- und Meldepflichten für Anbieter von Krypto-Dienstleistungen\nDas CARF soll in Bezug auf die Nutzung von Krypto-Finanzprodukten die erforderliche Transparenz im Steuerbereich herstellen, um Steuerhinterziehung zu verhindern und das Steueraufkommen sicherzustellen. Anbieter von Krypto-Dienstleistungen sind verpflichtet – in Deutschland auf Grundlage des Kryptowerte-Steuertransparenz-Gesetzes vom 22. Dezember 2025 (BGBl. 2025 I Nr. 352) – an die jeweiligen nationalen Steuerbehörden jährlich Informationen zu im Ausland steuerlich ansässigen Personen zu melden, für die sie Transaktionen mit Kryptowerten durchgeführt haben. Die Informationen sollen automatisch mit den Steuerbehörden der jeweiligen Ansässigkeitsstaaten ausgetauscht werden. Rechtsgrundlage des jährlichen automatischen Informationsaustausches mit Drittstaaten soll die Mehrseitige Vereinbarung (Multilateral Competent Authority Agreement – MCAA) zum CARF sein (CARF MCAA).\nDie Bundesrepublik Deutschland hat das CARF MCAA am 26. November 2024 unterzeichnet. Mit dem vorliegenden Vertragsgesetz soll das CARF MCAA die erforderliche Zustimmung der gesetzgebenden Körperschaften für die Abgabe der nach § 7 Absatz 1 CARF MCAA an die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung (OECD) zu übermittelnden Notifikationen erlangen. “"
+    },
+    "Beratungsverlauf im Bundestag": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Eingang im Bundestag": "16.07.2026",
+            "Drucksache": {
+              "text": "21/7195 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/071/2107195.pdf"
+            },
+            "Synopse": "nicht erforderlich"
+          }
+        }
+      ],
+      "text": null
+    },
+    "Beratungsverlauf im Bundesrat": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Gesetztyp": "Einspruchsgesetz",
+            "Drucksache im BR": "336/26",
+            "Eingang im Bundesrat": "29.05.2026",
+            "Erster Durchgang": {
+              "text": "10.07.2026, Stellungnahme (PDF)",
+              "href": "https://dserver.bundestag.de/brd/2026/0336-26B.pdf"
+            },
+            "Status Bundesrat": "Beraten"
+          }
+        },
+        {
+          "type": "list",
+          "headers": [
+            "Ausschusssitzungen",
+            "Sitzungsdatum",
+            "Tagesordnung (PDF)"
+          ],
+          "rows": [
+            [
+              "Finanzausschuss",
+              "26.06.2026",
+              {
+                "text": "Tagesordnung",
+                "href": "https://www.bundesrat.de/SharedDocs/auschuesse-termine/fz/termine-to/2026-06-26.html"
+              }
+            ]
+          ]
+        }
+      ],
+      "text": null
+    },
+    "Weiterführende Links": {
+      "tables": [],
+      "text": "Vorhabenseite des Ministeriums\nVorgangseite auf bundestag.de"
+    }
+  },
+  "listRowCells": [
+    "16.07.2026",
+    "Gesetz zur Vereinbarung über den automatischen Austausch von Informationen nach dem Melderahmen für Kryptowerte",
+    "BMFBundesministerium für Finanzen"
+  ]
+}

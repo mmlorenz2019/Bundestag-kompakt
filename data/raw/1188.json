@@ -1,0 +1,133 @@
+{
+  "docid": "1188",
+  "url": "https://bundestagszusammenfasser.de/details?docid=1188",
+  "scrapedAt": "2026-07-29T23:02:45.649Z",
+  "title": "Gesetz zur Mehrseitigen Vereinbarung über den automatischen Austausch von Informationen über Finanzkonten",
+  "statusImageAlt": "Der Entwurf ist im Bundestag eingegangen, wurde dort aber noch nicht beraten.",
+  "sections": {
+    "Basics": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Offizieller Titel": "Gesetz zu der Zusatzvereinbarung vom 8. Juni 2023 zur Mehrseitigen Vereinbarung vom 29. Oktober 2014 zwischen den zuständigen Behörden über den automatischen Austausch von Informationen über Finanzkonten",
+            "Initiator": {
+              "text": "Bundesministerium für Finanzen",
+              "href": "https://bundestagszusammenfasser.de/bmdetails?bmid=6"
+            },
+            "Status": "Im Bundestag eingegangen",
+            "Letzte Änderung": "17.07.2026",
+            "Entwurf PDF": {
+              "text": "Download Entwurf",
+              "href": "https://bundestagszusammenfasser.de/wp-content/uploads/rewp21/1188_Referentenentwurf.pdf"
+            },
+            "Drucksache": {
+              "text": "21/7194 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/071/2107194.pdf"
+            },
+            "Synopse": "nicht erforderlich",
+            "Gesetztyp": "Einspruchsgesetz",
+            "Status Bundesrat": "Beraten",
+            "Verbändebeteiligung": "Keine Verbändebeteiligung durchgeführt."
+          }
+        }
+      ],
+      "text": null
+    },
+    "Zusammenfassung": {
+      "tables": [],
+      "text": "Diese Zusammenfassung wurde mit GPT4 erstellt und kann Fehler enthalten.Basisinformationen:\nDer Gesetzentwurf dient der innerstaatlichen Umsetzung einer Zusatzvereinbarung vom 8. Juni 2023 zur bestehenden Mehrseitigen Vereinbarung über den automatischen Austausch von Informationen über Finanzkonten. Ziel ist es, die internationale Zusammenarbeit zur Bekämpfung von grenzüberschreitender Steuerhinterziehung zu stärken und den automatischen Informationsaustausch auf neue digitale Finanzprodukte, insbesondere Kryptowerte und entsprechende Investmentbeteiligungen, auszuweiten. Federführend zuständig ist das Bundesministerium der Finanzen.\nHintergrund:\nDie Bundesrepublik Deutschland und 68 weitere Staaten haben die Zusatzvereinbarung unterzeichnet, um den bereits bestehenden Informationsaustausch an neue Entwicklungen im Finanzsektor (z. B. Kryptowerte, E-Geld, Derivate) anzupassen. Auslöser ist die Aktualisierung des internationalen Standards (Common Reporting Standard, CRS) im Jahr 2023 sowie die Notwendigkeit, die Datenschutzregelungen an die DSGVO anzupassen. Die Vereinbarung ist Teil der internationalen Bemühungen, Steuervermeidung und Steuerhinterziehung effektiver zu bekämpfen.\nKosten:\nFür Bürgerinnen und Bürger sowie für die Wirtschaft entsteht kein Erfüllungsaufwand, da der Austausch ausschließlich zwischen Behörden erfolgt. Für die Verwaltung entsteht Erfüllungsaufwand, der jedoch bereits mit der Umsetzung der EU-Richtlinie 2023/2226 beziffert wurde; durch das vorliegende Gesetz entsteht kein zusätzlicher Aufwand. Weitere Kosten für Unternehmen oder Auswirkungen auf Preise und Verbraucherpreisniveau werden nicht erwartet. Einnahmen werden nicht konkret beziffert, aber der erweiterte Austausch soll zur Sicherung des deutschen Steueraufkommens beitragen.\nInkrafttreten:\nDas Gesetz tritt am Tag nach der Verkündung in Kraft. Der Zeitpunkt, zu dem die Zusatzvereinbarung für Deutschland wirksam wird, wird gesondert im Bundesgesetzblatt bekannt gegeben.\nSonstiges:\nDer Gesetzentwurf ist Teil internationaler Bemühungen, den Steuerdatenaustausch weiterzuentwickeln und Standards zu harmonisieren. Datenschutz und Verwendungsbeschränkungen für die ausgetauschten Daten werden besonders betont und an die DSGVO angepasst. Die Daten dürfen nur für Steuerzwecke verwendet und nicht veröffentlicht werden. Der Bundesrat hat keine Einwendungen gegen den Entwurf erhoben. Die Regelungen sind darauf ausgelegt, flexibel auf die Umsetzungsgeschwindigkeit anderer Staaten zu reagieren (Übergangsfristen möglich). Ein besonderes Eilbedürfnis wird nicht erwähnt."
+    },
+    "Medienberichte": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Haufe, 26.03.2026": {
+              "text": "Automatischer Informationsaustausch zu Finanzkonten",
+              "href": "https://www.haufe.de/steuern/gesetzgebung-politik/automatischer-informationsaustausch-zu-finanzkonten_168_680668.html"
+            }
+          }
+        }
+      ],
+      "text": null
+    },
+    "Informationen aus dem Ministerium": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Datum erster Entwurf": "24.03.2026",
+            "Datum Kabinettsbeschluss": "27.05.2026",
+            "Weiterführende Informationen": {
+              "text": "Vorhabenseite des Ministeriums",
+              "href": "https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/Abteilungen/Abteilung_IV/21_Legislaturperiode/2026-03-24-Austausch-Informationen-Finanzkonten/0-Gesetz.html"
+            }
+          }
+        }
+      ],
+      "text": "„In Reaktion auf die Verbreitung moderner Zahlungs- und Investmentmethoden hat die OECD im Auftrag der G20 den gemeinsamen Meldestandard (Common Reporting Standard – CRS) aktualisiert. Dieser ist seit 2017 Grundlage für den weltweiten automatischen Finanzkonteninformationsaustausch in Steuersachen und soll die erforderliche Transparenz herstellen, um Steuerhinterziehung zu verhindern und das Steueraufkommen abzusichern.\nUm auch die nach dem amended CRS künftig zusätzlich zu meldenden Informationen mit Staaten außerhalb der EU zwischenstaatlich automatisch austauschen zu können, hat die Bundesregierung am 26. November 2024 das amended CRS MCAA unterzeichnet.\nMit dem vorliegenden Vertragsgesetz soll die erforderliche Zustimmung der gesetzgebenden Körperschaften für die Abgabe der nach § 2 Absatz 2 der Vereinbarung an die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung (OECD) zu übermittelnden Notifikationen erlangt werden.“"
+    },
+    "Beratungsverlauf im Bundestag": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Eingang im Bundestag": "16.07.2026",
+            "Drucksache": {
+              "text": "21/7194 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/071/2107194.pdf"
+            },
+            "Synopse": "nicht erforderlich"
+          }
+        }
+      ],
+      "text": null
+    },
+    "Beratungsverlauf im Bundesrat": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Gesetztyp": "Einspruchsgesetz",
+            "Drucksache im BR": "337/26",
+            "Eingang im Bundesrat": "29.05.2026",
+            "Erster Durchgang": {
+              "text": "10.07.2026, Stellungnahme (PDF)",
+              "href": "https://dserver.bundestag.de/brd/2026/0337-26B.pdf"
+            },
+            "Status Bundesrat": "Beraten"
+          }
+        },
+        {
+          "type": "list",
+          "headers": [
+            "Ausschusssitzungen",
+            "Sitzungsdatum",
+            "Tagesordnung (PDF)"
+          ],
+          "rows": [
+            [
+              "Finanzausschuss",
+              "26.06.2026",
+              {
+                "text": "Tagesordnung",
+                "href": "https://www.bundesrat.de/SharedDocs/auschuesse-termine/fz/termine-to/2026-06-26.html"
+              }
+            ]
+          ]
+        }
+      ],
+      "text": null
+    },
+    "Weiterführende Links": {
+      "tables": [],
+      "text": "Vorhabenseite des Ministeriums\nVorgangseite auf bundestag.de"
+    }
+  },
+  "listRowCells": [
+    "16.07.2026",
+    "Gesetz zur Mehrseitigen Vereinbarung über den automatischen Austausch von Informationen über Finanzkonten",
+    "BMFBundesministerium für Finanzen"
+  ]
+}
