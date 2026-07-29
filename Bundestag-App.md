@@ -101,6 +101,8 @@ Nach jeder Phase: stoppen, gemeinsam testen/besprechen, erst dann weiter.
 
 **Später, außerhalb dieses Plans:** Telegram-Bot für Push-Benachrichtigung (eigene Phase, wenn Phase 0-5 steht).
 
+**Mögliches To-Do für später (2026-07-30):** Zusätzliche Anbindung der offiziellen **DIP-API** als zweite Datenquelle neben bundestagszusammenfasser.de — bewusst zurückgestellt, da Mehraufwand geschätzt ~50-70% für Phase 1 (v.a. Matching-Logik zwischen beiden Quellen, plus API-Key-Beantragung mit Wartezeit). Erst angehen, falls sich in der Praxis zeigt, dass bundestagszusammenfasser.de tatsächlich Themen/Vorgänge verpasst.
+
 ## Vorgehen (wichtig für nächste Session)
 Genau wie bei der Blutdruck-App: **nach jeder Bauphase stoppen und gemeinsam besprechen/testen**, nicht mehrere Phasen auf einmal durchziehen.
 
