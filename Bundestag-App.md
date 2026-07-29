@@ -1,8 +1,8 @@
 ---
 tags: [app-idee, privat]
-status: in Planung (grill-me-Interview abgeschlossen, Phasenplan steht, Phase 0 noch nicht gestartet)
+status: in Umsetzung (Phase 0 abgeschlossen, Phase 1 als nächstes)
 erstellt: 2026-07-25
-aktualisiert: 2026-07-29
+aktualisiert: 2026-07-30
 projektname: Bundestag-Kompakt
 ---
 
@@ -92,7 +92,7 @@ Format anhand eines echten Eintrags von bundestagszusammenfasser.de geprüft: "G
 ## Phasenplan (festgelegt 2026-07-29, analog Blutdruck-App)
 Nach jeder Phase: stoppen, gemeinsam testen/besprechen, erst dann weiter.
 
-- [ ] **Phase 0 – Grundgerüst:** GitHub-Repo anlegen, GitHub Pages einrichten (leere Platzhalter-Seite im Navy/Slate-Design) — Hosting-Kette steht von Anfang an
+- [x] **Phase 0 – Grundgerüst:** GitHub-Repo anlegen, GitHub Pages einrichten (leere Platzhalter-Seite im Navy/Slate-Design) — Hosting-Kette steht von Anfang an. *Abgeschlossen 2026-07-30: Repo [github.com/mmlorenz2019/Bundestag-kompakt](https://github.com/mmlorenz2019/Bundestag-kompakt), live unter [mmlorenz2019.github.io/Bundestag-kompakt](https://mmlorenz2019.github.io/Bundestag-kompakt/)*
 - [ ] **Phase 1 – Scraping/Datenbasis:** Skript ruft bundestagszusammenfasser.de ab und liest rohe Einträge strukturiert ein (noch ohne KI-Zusammenfassung)
 - [ ] **Phase 2 – KI-Zusammenfassung:** Rohdaten aus Phase 1 ins vereinbarte Format bringen (Titel, Zusammenfassung, strukturiertes Abstimmungsergebnis, Einbringer, Themenbereich, nächste Schritte) — Testfälle: Kindergeld-Beispiel von heute + 1-2 weitere
 - [ ] **Phase 3 – Automatisierung:** GitHub Actions Cronjob (1x täglich, Mo–Fr) führt Phase 1+2 automatisch aus, schreibt Ergebnis ins Repo, inkl. "nichts Neues"-Fall
