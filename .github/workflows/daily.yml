@@ -1,0 +1,57 @@
+name: Tägliches Update
+
+on:
+  schedule:
+    # 05:00 UTC = 06:00/07:00 MEZ/MESZ, Montag bis Freitag (Bundestag tagt am Wochenende nicht)
+    - cron: "0 5 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - name: Scrapen (nur neue/geänderte Vorgänge)
+        run: node scripts/scrape.js
+
+      - name: Neue/geänderte Vorgänge ermitteln
+        id: changes
+        run: |
+          git add data/raw
+          docids=$(git diff --cached --name-only --diff-filter=AM -- data/raw \
+            | grep -E '/[0-9]+\.json$' \
+            | xargs -n1 basename \
+            | sed 's/\.json$//' \
+            | tr '\n' ' ')
+          echo "docids=$docids" >> "$GITHUB_OUTPUT"
+
+      - name: KI-Zusammenfassung für geänderte Vorgänge
+        if: steps.changes.outputs.docids != ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          for docid in ${{ steps.changes.outputs.docids }}; do
+            node scripts/summarize.js "$docid"
+          done
+
+      - name: Commit & Push (falls es Änderungen gibt)
+        run: |
+          git config user.name "bundestag-kompakt-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Nichts Neues."
+          else
+            git commit -m "Automatisches Update: $(date -u +%Y-%m-%d)"
+            git push
+          fi

@@ -14,7 +14,30 @@ const BASE = "https://bundestagszusammenfasser.de";
 const LIST_PAGES = ["bundestagneu", "ausschuss", "archiv-2"];
 
 const RAW_DIR = path.join(__dirname, "..", "data", "raw");
+const MANIFEST_PATH = path.join(RAW_DIR, "_manifest.json");
 const HEADERS = { "User-Agent": "Mozilla/5.0 (compatible; BundestagKompaktBot/0.1)" };
+
+// Manifest merkt sich pro docid das zuletzt gesehene Datum aus der Übersichtsliste,
+// damit der tägliche Lauf nur neue/geänderte Vorgänge erneut abruft statt aller ~350.
+function loadManifest() {
+  try {
+    return JSON.parse(fs.readFileSync(MANIFEST_PATH, "utf-8"));
+  } catch {
+    return {};
+  }
+}
+
+function saveManifest(manifest) {
+  fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2) + "\n", "utf-8");
+}
+
+function extractListDate(cells) {
+  return cells.find((c) => /^\d{2}\.\d{2}\.\d{4}$/.test(c)) || null;
+}
+
+function letzteAenderungVon(detail) {
+  return detail.sections?.Basics?.tables?.[0]?.entries?.["Letzte Änderung"] ?? null;
+}
 
 async function fetchHtml(url) {
   const res = await fetch(url, { headers: HEADERS });
@@ -43,7 +66,13 @@ function parseListPage(html) {
       .filter((text) => text.length > 0);
 
     if (!entries.has(docid)) {
-      entries.set(docid, { docid, title, url: `${BASE}/details?docid=${docid}`, listRowCells: cells });
+      entries.set(docid, {
+        docid,
+        title,
+        url: `${BASE}/details?docid=${docid}`,
+        listRowCells: cells,
+        listDate: extractListDate(cells),
+      });
     }
   });
 
@@ -140,9 +169,12 @@ function parseDetailPage(html, docid, url) {
 }
 
 async function main() {
-  const limit = Number(process.argv[2]) || null; // optional: nur die ersten N Vorgänge (zum Testen)
+  const seedOnly = process.argv.includes("--seed");
+  const limitArg = process.argv.find((a) => /^\d+$/.test(a));
+  const limit = limitArg ? Number(limitArg) : null; // optional: nur die ersten N Kandidaten (zum Testen)
 
   fs.mkdirSync(RAW_DIR, { recursive: true });
+  const manifest = loadManifest();
 
   console.log("Lese Übersichtsseiten ...");
   const allListEntries = new Map();
@@ -154,21 +186,49 @@ async function main() {
   }
   console.log(`${allListEntries.size} Vorgänge gefunden über ${LIST_PAGES.join(", ")}.`);
 
-  let docids = [...allListEntries.keys()];
-  if (limit) docids = docids.slice(0, limit);
-
-  console.log(`Lese ${docids.length} Detailseiten ...`);
-  for (const docid of docids) {
-    const listEntry = allListEntries.get(docid);
-    const html = await fetchHtml(listEntry.url);
-    const detail = parseDetailPage(html, docid, listEntry.url);
-    detail.listRowCells = listEntry.listRowCells;
-
-    fs.writeFileSync(path.join(RAW_DIR, `${docid}.json`), JSON.stringify(detail, null, 2), "utf-8");
-    console.log(`  ${docid}: ${detail.title}`);
+  // --seed: Manifest für alle aktuell bekannten Vorgänge einmalig vormerken,
+  // OHNE für alle eine Detailseite abzurufen (und ohne spätere KI-Kosten für
+  // die komplette Alt-Historie). Ab dann ruft der normale Lauf nur noch echte
+  // Neuzugänge/Änderungen ab.
+  if (seedOnly) {
+    let backfilled = 0;
+    let seeded = 0;
+    for (const entry of allListEntries.values()) {
+      if (manifest[entry.docid]) continue;
+      const rawPath = path.join(RAW_DIR, `${entry.docid}.json`);
+      if (fs.existsSync(rawPath)) {
+        const raw = JSON.parse(fs.readFileSync(rawPath, "utf-8"));
+        manifest[entry.docid] = { listDate: entry.listDate, letzteAenderung: letzteAenderungVon(raw), title: raw.title };
+        backfilled++;
+      } else {
+        manifest[entry.docid] = { listDate: entry.listDate, title: entry.title, seededOnly: true };
+        seeded++;
+      }
+    }
+    saveManifest(manifest);
+    console.log(`${backfilled} bereits vorhandene Vorgänge übernommen, ${seeded} weitere ohne Detailabruf vorgemerkt.`);
+    return;
   }
 
-  console.log("Fertig.");
+  let candidates = [...allListEntries.values()].filter((entry) => {
+    const known = manifest[entry.docid];
+    return !known || known.listDate !== entry.listDate;
+  });
+  if (limit) candidates = candidates.slice(0, limit);
+
+  console.log(`${candidates.length} neue/geänderte Vorgänge werden abgerufen ...`);
+  for (const entry of candidates) {
+    const html = await fetchHtml(entry.url);
+    const detail = parseDetailPage(html, entry.docid, entry.url);
+    detail.listRowCells = entry.listRowCells;
+
+    fs.writeFileSync(path.join(RAW_DIR, `${entry.docid}.json`), JSON.stringify(detail, null, 2), "utf-8");
+    manifest[entry.docid] = { listDate: entry.listDate, letzteAenderung: letzteAenderungVon(detail), title: detail.title };
+    console.log(`  ${entry.docid}: ${detail.title}`);
+  }
+
+  saveManifest(manifest);
+  console.log(candidates.length ? "Fertig." : "Nichts Neues.");
 }
 
 if (require.main === module) {
