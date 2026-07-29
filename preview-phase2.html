@@ -56,10 +56,28 @@
   .card {
     background: white;
     border: 1px solid var(--slate-200);
+    border-left: 4px solid var(--slate-400);
     border-radius: 12px;
     margin-bottom: 0.75rem;
     overflow: hidden;
   }
+  .card.status-angenommen { border-left-color: var(--green-700); }
+  .card.status-abgelehnt { border-left-color: var(--red-700); }
+  .card.status-offen { border-left-color: var(--slate-400); }
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .status-badge.status-angenommen { background: var(--green-100); color: var(--green-700); }
+  .status-badge.status-abgelehnt { background: var(--red-100); color: var(--red-700); }
+  .status-badge.status-offen { background: var(--slate-100); color: var(--slate-600); }
   .card-summary {
     padding: 1rem 1.1rem;
     cursor: pointer;
@@ -121,6 +139,7 @@ const entries = [
     "zusammenfassung": "Bisher musste man Kindergeld immer aktiv beantragen. Künftig soll die Familienkasse das Geld nach einer Geburt automatisch auszahlen können, wenn sie ohnehin schon alle nötigen Infos hat (z.B. über die Geburtsmeldung) und eine Kontoverbindung bekannt ist – ganz ohne dass die Eltern etwas beantragen müssen. Zunächst gilt das ab dem zweiten Kind, später soll es auch für das erste Kind kommen. Ziel: weniger Papierkram für frischgebackene Eltern, weniger Verwaltungsaufwand für den Staat. Kritikpunkt aus Anhörungen (u.a. vom Deutschen Kinderhilfswerk): das automatische Verfahren gilt vorerst nur für Familien mit Wohnsitz in Deutschland und mindestens einem erwerbstätigen Elternteil – nicht-erwerbstätige Eltern, die oft besonders auf Unterstützung angewiesen sind, profitieren also (noch) nicht davon. Start: ab 1. Januar 2027, schrittweise.",
     "abstimmungsergebnis": {
       "art": "Ausschuss-Empfehlung (Handzeichen, keine namentliche Abstimmung)",
+      "ausgang": "angenommen",
       "dafuer": ["CDU/CSU", "SPD", "Bündnis 90/Die Grünen"],
       "dagegen": [],
       "enthalten": ["AfD", "Die Linke"]
@@ -139,6 +158,23 @@ const entries = [
     "eingebrachtVon": "Bundesregierung (Bundesministerium für Verkehr)",
     "themenbereich": "Umwelt / Verkehr",
     "naechsteSchritte": "Ist gerade erst im Bundestag eingegangen, erste Lesung und Ausschussberatung stehen noch aus"
+  },
+  {
+    "docid": "1152-afd-antrag",
+    "url": "https://bundestagszusammenfasser.de/details?docid=1152",
+    "letzteAenderung": "09.07.2026",
+    "titel": "Kindergeld für Kinder im EU-Ausland: AfD-Vorschlag abgelehnt",
+    "zusammenfassung": "Die AfD-Fraktion wollte das Kindergeld für Kinder, die in einem anderen EU-Land leben, an das dortige (oft niedrigere) Preisniveau anpassen. Der Bundestag hat diesen Vorschlag abgelehnt – unter anderem, weil ein Urteil des Europäischen Gerichtshofs eine solche Kürzung als unionsrechtswidrig eingestuft hat. Damit bleibt es bei der bisherigen Regelung.",
+    "abstimmungsergebnis": {
+      "art": "Abstimmung im Plenum",
+      "ausgang": "abgelehnt",
+      "dafuer": ["AfD"],
+      "dagegen": ["CDU/CSU", "SPD", "Bündnis 90/Die Grünen", "Die Linke"],
+      "enthalten": []
+    },
+    "eingebrachtVon": "AfD-Fraktion",
+    "themenbereich": "Soziales / Familie",
+    "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)"
   }
 ];
 
@@ -158,11 +194,24 @@ function renderVote(vote) {
     </div>`;
 }
 
+function statusOf(entry) {
+  if (!entry.abstimmungsergebnis) return "offen";
+  return entry.abstimmungsergebnis.ausgang; // "angenommen" | "abgelehnt"
+}
+
+const STATUS_LABEL = {
+  angenommen: "✓ Angenommen",
+  abgelehnt: "✕ Abgelehnt",
+  offen: "○ Läuft noch",
+};
+
 function renderCard(entry) {
+  const status = statusOf(entry);
   return `
-    <details class="card">
+    <details class="card status-${status}">
       <summary class="card-summary">
         <h2>${entry.titel}</h2>
+        <span class="status-badge status-${status}">${STATUS_LABEL[status]}</span>
         <span class="chevron">›</span>
       </summary>
       <div class="card-body">

@@ -17,11 +17,12 @@ Gib AUSSCHLIESSLICH ein JSON-Objekt zurück (keine Erklärungen drumherum) mit e
   "titel": string,               // verständliche Sprache, nicht der sperrige Gesetzestitel
   "zusammenfassung": string,     // einfache Sprache, darf länger als 4-5 Sätze sein wenn nötig, inkl. wichtiger Kritikpunkte aus Stellungnahmen/Anhörungen falls vorhanden
   "abstimmungsergebnis": {
-    "art": string,               // z.B. "Ausschuss-Empfehlung (Handzeichen)" / "Namentliche Abstimmung" / "Noch keine Abstimmung"
+    "art": string,               // z.B. "Ausschuss-Empfehlung (Handzeichen)" / "Namentliche Abstimmung"
+    "ausgang": "angenommen" | "abgelehnt", // laut Beschlussempfehlung/Abstimmungstext
     "dafuer": string[],          // Parteien/Fraktionen, leer falls nicht zutreffend
     "dagegen": string[],
     "enthalten": string[]
-  } | null,                      // null wenn noch keine Beschlussempfehlung/Abstimmung vorliegt
+  } | null,                      // null wenn noch keine Beschlussempfehlung/Abstimmung vorliegt (laufendes Verfahren)
   "eingebrachtVon": string,      // z.B. "Bundesregierung (Bundesministerium für X)" oder Fraktionsname
   "themenbereich": string,       // z.B. Gesundheit, Wirtschaft, Umwelt, Soziales, Verkehr, Justiz ...
   "naechsteSchritte": string     // z.B. "Muss noch durch den Bundesrat" / "Erste Lesung im Bundestag steht noch aus"
