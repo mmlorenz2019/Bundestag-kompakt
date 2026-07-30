@@ -128,16 +128,22 @@
   </main>
 
 <script>
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  }[c]));
+}
+
 function pillList(items, cls) {
   if (!items || items.length === 0) return '<span class="no-vote">–</span>';
-  return items.map(p => `<span class="pill ${cls}">${p}</span>`).join("");
+  return items.map(p => `<span class="pill ${cls}">${esc(p)}</span>`).join("");
 }
 
 function renderVote(vote) {
   if (!vote) return `<div class="no-vote">Noch keine Abstimmung / Beschlussempfehlung vorhanden.</div>`;
   return `
     <div class="vote-block">
-      <div class="vote-row"><span class="vote-label">Art:</span> ${vote.art}</div>
+      <div class="vote-row"><span class="vote-label">Art:</span> ${esc(vote.art)}</div>
       <div class="vote-row"><span class="vote-label">Dafür:</span> ${pillList(vote.dafuer, "fuer")}</div>
       <div class="vote-row"><span class="vote-label">Dagegen:</span> ${pillList(vote.dagegen, "gegen")}</div>
       <div class="vote-row"><span class="vote-label">Enthalten:</span> ${pillList(vote.enthalten, "enthalten")}</div>
@@ -160,19 +166,19 @@ function renderCard(entry) {
   return `
     <details class="card status-${status}">
       <summary class="card-summary">
-        <h2>${entry.titel}</h2>
+        <h2>${esc(entry.titel)}</h2>
         <span class="status-badge status-${status}">${STATUS_LABEL[status]}</span>
         <span class="chevron">›</span>
       </summary>
       <div class="card-body">
-        <p>${entry.zusammenfassung}</p>
+        <p>${esc(entry.zusammenfassung)}</p>
         <div class="field-label">Abstimmungsergebnis</div>
         ${renderVote(entry.abstimmungsergebnis)}
         <div class="field-label">Eingebracht von</div>
-        <div class="meta-line">${entry.eingebrachtVon}</div>
+        <div class="meta-line">${esc(entry.eingebrachtVon)}</div>
         <div class="field-label">Nächste Schritte</div>
-        <div class="meta-line">${entry.naechsteSchritte}</div>
-        <div class="quelle">Letzte Änderung: ${entry.letzteAenderung} · <a href="${entry.url}" target="_blank" rel="noopener">Quelle</a></div>
+        <div class="meta-line">${esc(entry.naechsteSchritte)}</div>
+        <div class="quelle">Letzte Änderung: ${esc(entry.letzteAenderung)} · <a href="${esc(entry.url)}" target="_blank" rel="noopener">Quelle</a></div>
       </div>
     </details>`;
 }
@@ -195,7 +201,7 @@ function render(entries) {
 
   app.innerHTML = sortedGroupNames
     .map((group) => `
-      <div class="group-title">${group}</div>
+      <div class="group-title">${esc(group)}</div>
       ${groups[group].map(renderCard).join("")}
     `)
     .join("");

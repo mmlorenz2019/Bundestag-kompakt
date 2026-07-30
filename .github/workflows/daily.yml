@@ -39,8 +39,9 @@ jobs:
         if: steps.changes.outputs.docids != ''
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DOCIDS: ${{ steps.changes.outputs.docids }}
         run: |
-          for docid in ${{ steps.changes.outputs.docids }}; do
+          for docid in $DOCIDS; do
             node scripts/summarize.js "$docid"
           done
 
