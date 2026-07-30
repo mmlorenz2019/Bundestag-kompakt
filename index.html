@@ -44,8 +44,9 @@
     align-items: center;
     gap: 0.5rem;
   }
-  .filter-bar label { font-size: 0.85rem; color: var(--slate-600); }
-  .filter-bar select {
+  .filter-bar label { font-size: 0.85rem; color: var(--slate-600); flex-shrink: 0; }
+  .filter-bar select,
+  .filter-bar input[type="search"] {
     font-size: 0.85rem;
     padding: 0.3rem 0.6rem;
     border-radius: 8px;
@@ -53,6 +54,7 @@
     background: white;
     color: var(--navy-900);
   }
+  .filter-bar input[type="search"] { flex: 1; min-width: 0; }
   .stats-bar {
     max-width: 720px;
     margin: 0.75rem auto 0;
@@ -169,6 +171,10 @@
     <h1>Bundestag-Kompakt</h1>
     <p>Was im Bundestag passiert – kompakt und in einfacher Sprache</p>
   </header>
+  <div class="filter-bar" id="search-bar">
+    <label for="search-input">Suche:</label>
+    <input type="search" id="search-input" placeholder="z.B. Kindergeld, Fluglärm ...">
+  </div>
   <div class="filter-bar" id="filter-bar" hidden>
     <label for="period-filter">Zeitraum:</label>
     <select id="period-filter"></select>
@@ -258,7 +264,9 @@ function render(entries) {
   renderStats(entries);
 
   if (!entries || entries.length === 0) {
-    app.innerHTML = `<div class="state-message">Aktuell keine Einträge. Der Bundestag tagt gerade nicht, oder die Datenerfassung läuft noch.</div>`;
+    app.innerHTML = allEntries.length === 0
+      ? `<div class="state-message">Aktuell keine Einträge. Der Bundestag tagt gerade nicht, oder die Datenerfassung läuft noch.</div>`
+      : `<div class="state-message">Keine Einträge für diese Suche/diesen Zeitraum gefunden.</div>`;
     return;
   }
 
@@ -298,6 +306,30 @@ function monthLabel(date) {
   return `${MONTH_NAMES[date.getMonth()]} ${date.getFullYear()}`;
 }
 
+let allEntries = [];
+let selectedMonth = "alle";
+
+function matchesSearch(entry, query) {
+  const haystack = `${entry.titel} ${entry.zusammenfassung} ${entry.themenbereich}`.toLowerCase();
+  return haystack.includes(query);
+}
+
+function applyFilters() {
+  let filtered = allEntries;
+
+  if (selectedMonth !== "alle") {
+    filtered = filtered.filter((entry) => {
+      const date = parseGermanDate(entry.letzteAenderung);
+      return date && monthKey(date) === selectedMonth;
+    });
+  }
+
+  const query = document.getElementById("search-input").value.trim().toLowerCase();
+  if (query) filtered = filtered.filter((entry) => matchesSearch(entry, query));
+
+  render(filtered);
+}
+
 function setupFilter(entries) {
   const bar = document.getElementById("filter-bar");
   const select = document.getElementById("period-filter");
@@ -318,17 +350,15 @@ function setupFilter(entries) {
     sortedKeys.map((key) => `<option value="${key}">${esc(months.get(key))}</option>`).join("");
 
   select.addEventListener("change", () => {
-    const key = select.value;
-    const filtered = key === "alle"
-      ? entries
-      : entries.filter((entry) => {
-          const date = parseGermanDate(entry.letzteAenderung);
-          return date && monthKey(date) === key;
-        });
-    render(filtered);
+    selectedMonth = select.value;
+    applyFilters();
   });
 
   bar.hidden = false;
+}
+
+function setupSearch() {
+  document.getElementById("search-input").addEventListener("input", applyFilters);
 }
 
 fetch("data/index.json")
@@ -337,8 +367,10 @@ fetch("data/index.json")
     return res.json();
   })
   .then((entries) => {
+    allEntries = entries;
     render(entries);
     setupFilter(entries);
+    setupSearch();
   })
   .catch((err) => {
     document.getElementById("app").innerHTML =
