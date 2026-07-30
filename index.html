@@ -36,6 +36,23 @@
   }
   header h1 { margin: 0; font-size: 1.25rem; font-weight: 600; }
   header p { margin: 0.25rem 0 0; color: var(--slate-400); font-size: 0.875rem; }
+  .filter-bar {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .filter-bar label { font-size: 0.85rem; color: var(--slate-600); }
+  .filter-bar select {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    border: 1px solid var(--slate-200);
+    background: white;
+    color: var(--navy-900);
+  }
   main { max-width: 720px; margin: 0 auto; padding: 1.5rem; }
   .state-message {
     text-align: center;
@@ -123,6 +140,10 @@
     <h1>Bundestag-Kompakt</h1>
     <p>Was im Bundestag passiert – kompakt und in einfacher Sprache</p>
   </header>
+  <div class="filter-bar" id="filter-bar" hidden>
+    <label for="period-filter">Zeitraum:</label>
+    <select id="period-filter"></select>
+  </div>
   <main id="app">
     <div class="state-message">Lädt ...</div>
   </main>
@@ -207,12 +228,68 @@ function render(entries) {
     .join("");
 }
 
+const MONTH_NAMES = [
+  "Januar", "Februar", "März", "April", "Mai", "Juni",
+  "Juli", "August", "September", "Oktober", "November", "Dezember",
+];
+
+function parseGermanDate(d) {
+  if (!d) return null;
+  const [day, month, year] = d.split(".").map(Number);
+  if (!day || !month || !year) return null;
+  return new Date(year, month - 1, day);
+}
+
+function monthKey(date) {
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+}
+
+function monthLabel(date) {
+  return `${MONTH_NAMES[date.getMonth()]} ${date.getFullYear()}`;
+}
+
+function setupFilter(entries) {
+  const bar = document.getElementById("filter-bar");
+  const select = document.getElementById("period-filter");
+
+  const months = new Map();
+  for (const entry of entries) {
+    const date = parseGermanDate(entry.letzteAenderung);
+    if (!date) continue;
+    const key = monthKey(date);
+    if (!months.has(key)) months.set(key, monthLabel(date));
+  }
+
+  const sortedKeys = [...months.keys()].sort().reverse();
+  if (sortedKeys.length <= 1) return; // Filter erst sinnvoll, wenn es was zum Filtern gibt
+
+  select.innerHTML =
+    `<option value="alle">Alle</option>` +
+    sortedKeys.map((key) => `<option value="${key}">${esc(months.get(key))}</option>`).join("");
+
+  select.addEventListener("change", () => {
+    const key = select.value;
+    const filtered = key === "alle"
+      ? entries
+      : entries.filter((entry) => {
+          const date = parseGermanDate(entry.letzteAenderung);
+          return date && monthKey(date) === key;
+        });
+    render(filtered);
+  });
+
+  bar.hidden = false;
+}
+
 fetch("data/index.json")
   .then((res) => {
     if (!res.ok) throw new Error("HTTP " + res.status);
     return res.json();
   })
-  .then(render)
+  .then((entries) => {
+    render(entries);
+    setupFilter(entries);
+  })
   .catch((err) => {
     document.getElementById("app").innerHTML =
       `<div class="state-message">Daten konnten nicht geladen werden (${err.message}).</div>`;
