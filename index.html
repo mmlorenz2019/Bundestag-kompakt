@@ -53,6 +53,25 @@
     background: white;
     color: var(--navy-900);
   }
+  .stats-bar {
+    max-width: 720px;
+    margin: 0.75rem auto 0;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .stat-chip {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    background: white;
+    border: 1px solid var(--slate-200);
+    color: var(--slate-600);
+  }
+  .stat-chip.stat-angenommen { color: var(--green-700); }
+  .stat-chip.stat-abgelehnt { color: var(--red-700); }
   main { max-width: 720px; margin: 0 auto; padding: 1.5rem; }
   .state-message {
     text-align: center;
@@ -154,6 +173,7 @@
     <label for="period-filter">Zeitraum:</label>
     <select id="period-filter"></select>
   </div>
+  <div class="stats-bar" id="stats-bar"></div>
   <main id="app">
     <div class="state-message">Lädt ...</div>
   </main>
@@ -216,8 +236,26 @@ function renderCard(entry) {
     </details>`;
 }
 
+function renderStats(entries) {
+  const statsBar = document.getElementById("stats-bar");
+  if (!entries || entries.length === 0) {
+    statsBar.innerHTML = "";
+    return;
+  }
+
+  const counts = { angenommen: 0, abgelehnt: 0, offen: 0 };
+  for (const entry of entries) counts[statusOf(entry)]++;
+
+  statsBar.innerHTML = `
+    <span class="stat-chip stat-angenommen">✓ ${counts.angenommen} angenommen</span>
+    <span class="stat-chip stat-abgelehnt">✕ ${counts.abgelehnt} abgelehnt</span>
+    <span class="stat-chip stat-offen">○ ${counts.offen} laufend</span>
+  `;
+}
+
 function render(entries) {
   const app = document.getElementById("app");
+  renderStats(entries);
 
   if (!entries || entries.length === 0) {
     app.innerHTML = `<div class="state-message">Aktuell keine Einträge. Der Bundestag tagt gerade nicht, oder die Datenerfassung läuft noch.</div>`;
