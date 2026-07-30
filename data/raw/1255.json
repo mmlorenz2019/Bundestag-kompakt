@@ -1,0 +1,135 @@
+{
+  "docid": "1255",
+  "url": "https://bundestagszusammenfasser.de/details?docid=1255",
+  "scrapedAt": "2026-07-30T20:28:45.936Z",
+  "title": "Gesetz zur Änderung kindergeldrechtlicher Regelungen",
+  "statusImageAlt": null,
+  "sections": {
+    "Basics": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Offizieller Titel": "Gesetz zur Änderung kindergeldrechtlicher Regelungen",
+            "Initiator": "AfD",
+            "Status": "Abgelehnt",
+            "Letzte Änderung": "09.07.2026",
+            "Drucksache": {
+              "text": "21/6003 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/060/2106003.pdf"
+            },
+            "Beschlussempfehlung": {
+              "text": "21/6979 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/069/2106979.pdf"
+            },
+            "Gesetztyp": "Zustimmungsgesetz",
+            "Exekutiver Fußabdruck": "❌ Nicht vorhanden.",
+            "Verbändebeteiligung": "Kein Zeitraum angegeben.",
+            "Trojanercheck ": ""
+          }
+        }
+      ],
+      "text": null
+    },
+    "Zusammenfassung": {
+      "tables": [],
+      "text": "Diese Zusammenfassung wurde mit GPT4 erstellt und kann Fehler enthalten.Basisinformationen:\nDas wesentliche Ziel des Gesetzentwurfs ist, das Kindergeld für Kinder, die ihren Wohnsitz in einem anderen EU-Mitgliedstaat haben, an die Lebenshaltungskosten des jeweiligen Wohnsitzstaates anzupassen. Dadurch soll verhindert werden, dass Familien mit Kindern im Ausland – insbesondere in Ländern mit niedrigerer Kaufkraft – einen ungerechtfertigten Fördereffekt erhalten, der Familien mit in Deutschland lebenden Kindern nicht zusteht. Die Lösung sieht eine Staffelung der Kindergeldbeträge anhand der sogenannten Ländergruppeneinteilung vor, die bereits im Einkommensteuerrecht genutzt wird. Der Entwurf stammt von Abgeordneten und der Fraktion der AfD, nicht von der Bundesregierung; ein federführendes Ministerium ist daher nicht genannt.\nHintergrund:\nDer Gesetzentwurf verweist auf die aktuelle Rechtslage, nach der auch für Kinder, die in anderen EU-Staaten leben, Kindergeld nach deutschem Recht gezahlt wird. Dies beruht auf EU-Vorgaben zur Koordinierung der sozialen Sicherheit und dem Recht auf Freizügigkeit. Die Antragstellung von EU-Bürgern für im Ausland lebende Kinder habe zugenommen. Die derzeitige Praxis führe zu einer Ungleichbehandlung, da Familien mit Kindern in Ländern mit niedrigerer Kaufkraft einen höheren realen Nutzen aus dem Kindergeld ziehen. Dies wird als nicht gerechtfertigt angesehen und soll durch die Gesetzesänderung korrigiert werden.\nKosten:\nFür den Bundeshaushalt werden Steuermehreinnahmen von rund 190 Millionen Euro erwartet. Für Bürgerinnen und Bürger sowie für die Wirtschaft entstehen keine messbaren zusätzlichen Kosten oder Bürokratieaufwand. Bei den Familienkassen der Bundesagentur für Arbeit entsteht ein einmaliger maschineller Umstellungsaufwand von 8,3 Millionen Euro sowie weitere einmalige Kosten (1 Million Euro für maschinelle Umstellung, 740.000 Euro für die technische Umsetzung der Datenübermittlung). Beim Bundeszentralamt für Steuern fallen einmalige Kosten von rund 390.000 Euro an. In den Ländern entsteht ein einmaliger technischer Umstellungsaufwand in nicht quantifizierbarer Höhe. Auswirkungen auf Einzelpreise oder das Verbraucherpreisniveau werden nicht erwartet.\nInkrafttreten:\nKeine Angaben.\nSonstiges:\nDer Entwurf betont, dass keine Alternativen zu der vorgeschlagenen Regelung gesehen werden. Die Gesetzgebungskompetenz des Bundes wird ausführlich begründet. Der Entwurf geht auf die Vereinbarkeit mit EU-Recht ein und argumentiert, dass eine Indexierung des Kindergeldes nach Wohnsitzstaat zulässig sei. Gleichstellungspolitische Auswirkungen werden verneint. Eine besondere Eilbedürftigkeit wird nicht erwähnt.\nMaßnahmen:\nHier sind die wichtigsten Maßnahmen des Gesetzentwurfs stichpunktartig zusammengefasst:\n- Das Kindergeld für Kinder mit Wohnsitz im Ausland wird künftig an die Lebenshaltungskosten des jeweiligen Wohnsitzstaates angepasst.\n- Die Höhe des Kindergeldes richtet sich nach einer Ländergruppeneinteilung, die auf dem durchschnittlichen Pro-Kopf-Einkommen des jeweiligen Landes basiert.\n- Diese Einteilung ordnet über 200 Staaten vier Ländergruppen zu, nach denen die Kindergeldbeträge gestaffelt werden.\n- Bei einer im Inland begonnenen Ausbildung wird ein Ausbildungsaufenthalt im EU-Ausland beim Kindergeld nicht benachteiligt.\n- Die Regelungen gelten sowohl für das Einkommensteuergesetz als auch für das Bundeskindergeldgesetz.\n- Inkrafttreten der neuen Regelungen ist der 1. Juli 2026."
+    },
+    "Beratungsverlauf im Bundestag": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Eingang im Bundestag": "19.05.2026",
+            "Erste Beratung": "22.05.2026",
+            "Abstimmung": "09.07.2026",
+            "Drucksache": {
+              "text": "21/6003 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/060/2106003.pdf"
+            },
+            "Beschlussempfehlung": {
+              "text": "21/6979 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/069/2106979.pdf"
+            },
+            "Plenarsitzungen": {
+              "text": "Aufzeichnungen und Dokumente",
+              "href": "https://www.bundestag.de/dokumente/textarchiv/2026/kw21-de-kindergeld-1174720"
+            }
+          }
+        },
+        {
+          "type": "list",
+          "headers": [
+            "Ausschuss",
+            "Sitzungsdatum",
+            "Tagesordnung (PDF)"
+          ],
+          "rows": [
+            [
+              "Finanzausschuss",
+              "10.06.2026",
+              {
+                "text": "Anhörung",
+                "href": "https://www.bundestag.de/resource/blob/1183286/to-36.pdf"
+              }
+            ],
+            [
+              "Finanzausschuss",
+              "22.06.2026",
+              {
+                "text": "Anhörung",
+                "href": "https://www.bundestag.de/resource/blob/1184724/to-37.pdf"
+              }
+            ],
+            [
+              "Finanzausschuss",
+              "24.06.2026",
+              {
+                "text": "Tagesordnung",
+                "href": "https://www.bundestag.de/resource/blob/1187728/to-38.pdf"
+              }
+            ],
+            [
+              "Ausschuss für Arbeit und Soziales",
+              "08.07.2026",
+              {
+                "text": "Tagesordnung",
+                "href": "https://www.bundestag.de/resource/blob/1193356/TO-36-Sitzung.pdf"
+              }
+            ],
+            [
+              "Ausschuss für Bildung, Familie, Senioren, Frauen und Jugend",
+              "08.07.2026",
+              {
+                "text": "Tagesordnung",
+                "href": "https://www.bundestag.de/resource/blob/1193316/a13-28-TO.pdf"
+              }
+            ],
+            [
+              "Finanzausschuss",
+              "08.07.2026",
+              {
+                "text": "Tagesordnung",
+                "href": "https://www.bundestag.de/resource/blob/1193182/to-41.pdf"
+              }
+            ]
+          ]
+        }
+      ],
+      "text": "AusschusssitzungenDie Daten wurden mit GPT4 ermittelt und können Fehler enthalten. Im Zweifel bitte die verlinkten Dokumente prüfen."
+    },
+    "Beschlussempfehlung": {
+      "tables": [],
+      "text": "Zusammenfassung der BeschlussempfehlungDiese Zusammenfassung wurde mit GPT4 auf Basis des Textes des Beschlussempfehlung erstellt.Beratungsverlauf:\nDer federführende Ausschuss war der Finanzausschuss. Mitberatende Ausschüsse waren der Ausschuss für Arbeit und Soziales sowie der Ausschuss für Bildung, Familie, Senioren, Frauen und Jugend. Zusätzlich hat sich der Parlamentarische Beirat für nachhaltige Entwicklung und Zukunftsfragen mit dem Gesetzentwurf befasst.\nBeschlussempfehlung:\nDer Finanzausschuss empfiehlt die Annahme des Gesetzentwurfs der Bundesregierung (Drucksache 21/5874, Einführung eines antragslosen Kindergeldes) in geänderter Fassung mit den Stimmen der Fraktionen CDU/CSU, SPD und BÜNDNIS 90/DIE GRÜNEN bei Stimmenthaltung der Fraktionen AfD und Die Linke.\nDer Gesetzentwurf der AfD (Drucksache 21/6003, Anpassung des Kindergeldes an Lebenshaltungskosten im EU-Ausland) wird mit den Stimmen von CDU/CSU, SPD, BÜNDNIS 90/DIE GRÜNEN und Die Linke gegen die Stimmen der AfD abgelehnt.\nEin Entschließungsantrag wird von BÜNDNIS 90/DIE GRÜNEN für die Plenarberatung angekündigt, der Lücken des Gesetzentwurfs aufzeigen und Vorschläge zu deren Schließung unterbreiten soll.\nÄnderungen:\nEs wurden Änderungen am Gesetzentwurf der Bundesregierung eingefügt. Diese betreffen insbesondere den Abruf der Kontoverbindungen bei den Leistungsträgern nach SGB II/III sowie datenschutzrechtliche Folgeänderungen. Die Änderungen beziehen sich auf den ursprünglichen Gesetzentwurf und stehen im Zusammenhang mit der Umsetzung des antragslosen Kindergeldes. Es gibt keine Hinweise auf Änderungen, die sich auf ganz andere Gesetze beziehen (kein „Trojaner“ erkennbar).\nBegründung:\nDie Begründung hebt hervor, dass das antragslose Kindergeld die Familienkasse ermächtigt, bei Vorliegen aller relevanten Daten auf einen Antrag zu verzichten. Dies soll Bürokratie abbauen, Fehlerquellen minimieren und Familien entlasten. Die Auszahlung erfolgt auf bekannte Kontoverbindungen, das Wahlrecht der Eltern wird zunächst durch eine Auswahl der Familienkasse ersetzt, kann aber nachträglich geändert werden. Datenschutz und Datenabgleich werden betont. Die Änderungen dienen der Qualitätssicherung und der Vermeidung ungerechtfertigter Zahlungen. Die Einführung erfolgt stufenweise, um Erfahrungen zu sammeln und Risiken zu minimieren. Die Begründung des AfD-Gesetzentwurfs betont die Notwendigkeit einer Indexierung des Kindergeldes für im EU-Ausland lebende Kinder, um Missbrauch und ungerechtfertigte Vorteile zu verhindern.\nStatements der Fraktionen:\n- CDU/CSU und SPD: Begrüßen die Einführung des antragslosen Kindergeldes als wichtigen Schritt zur Digitalisierung staatlicher Leistungen, betonen die Notwendigkeit eines schrittweisen Vorgehens und die besondere Berücksichtigung von Müttern bei der Auszahlung. Sie erwarten von der Familienkasse, die Rechte der Mütter zu wahren, verzichten aber auf eine gesetzliche Festlegung zugunsten einer flexiblen Umsetzung.\n- AfD: Kritisiert ungeklärte Punkte und Kostensteigerungen durch Doppelstrukturen, sieht weiterhin Missbrauchsrisiken und fordert eine Indexierung des Kindergeldes für im Ausland lebende Kinder. Hält die EuGH-Rechtsprechung für falsch und sieht eine Benachteiligung deutscher Kinder. Enthält sich beim Regierungsentwurf, da Bürokratieabbau begrüßt wird.\n- BÜNDNIS 90/DIE GRÜNEN: Unterstützen den Gesetzentwurf als richtigen Schritt zur Entbürokratisierung und Digitalisierung, fordern aber eine zügige Ausweitung auf alle Familien (auch für Erstgeborene und Adoptivfamilien). Setzen sich für gebündelte digitale Antragsverfahren ein und kündigen einen Entschließungsantrag an.\n- Die Linke: Begrüßt die Einführung als überfällig, kritisiert aber die langsame und stufenweise Umsetzung. Fordert eine schnellere Einführung und eine deutliche Erhöhung des Kindergeldes, da dieses zu niedrig sei und besser situierte Familien durch den Kinderfreibetrag bevorzugt würden. Die Digitalisierung allein reiche nicht aus.\nZusammenfassung:\nDer Finanzausschuss empfiehlt die Annahme des Regierungsentwurfs für ein antragsloses Kindergeld in geänderter Fassung. Die Änderungen betreffen technische und datenschutzrechtliche Aspekte. Die Koalitionsfraktionen unterstützen das Vorhaben, die AfD kritisiert Missbrauchsrisiken und fordert eine Indexierung, BÜNDNIS 90/DIE GRÜNEN und Die Linke fordern weitergehende Verbesserungen. Der AfD-Gesetzentwurf zur Indexierung des Kindergeldes wird abgelehnt.\nÄnderungen:\nHier sind die wichtigsten Maßnahmen aus den Änderungen des Ausschusses am Gesetzentwurf:\n- Die Familienkasse erhält eine ausdrückliche gesetzliche Befugnis, zur Überprüfung von Kindergeldansprüchen automatisiert erforderliche Daten abzurufen (Klarstellung entsprechend verfassungsgerichtlicher Vorgaben).\n- Die Familienkasse darf IBAN und ggf. BIC automatisiert bei Leistungsträgern nach SGB II und SGB III abrufen, wenn diese Daten nicht bereits beim Bundeszentralamt für Steuern hinterlegt sind.\n- Der Abruf der Kontoverbindung durch die Familienkasse ist nur zulässig, wenn dies technisch mit geringem Aufwand möglich ist und nicht bereits eine Kontoverbindung bekannt ist.\n- SGB II- und SGB III-Träger dürfen die IBAN (und ggf. BIC) an die Familienkassen übermitteln.\n- Die Familienkasse wird berechtigt, automatisiert Daten aus den Dateisystemen der Rentenversicherung abzurufen, sofern dies zur Überprüfung des Kindergeldanspruchs erforderlich ist.\n- Für die automatisierten Datenabrufe gelten die Verfahrensvorschriften des SGB X entsprechend.\nRedaktionelle Änderungen, Folgeänderungen und Übergangsregelungen wurden nicht berücksichtigt."
+    },
+    "Weiterführende Links": {
+      "tables": [],
+      "text": "Vorgangseite auf bundestag.de\nAufzeichnungen und Dokumente der Plenarsitzungen"
+    }
+  },
+  "listRowCells": [
+    "09.07.2026",
+    "Gesetz zur Änderung kindergeldrechtlicher Regelungen",
+    "AfD"
+  ]
+}

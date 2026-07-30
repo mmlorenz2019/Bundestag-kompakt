@@ -1,0 +1,90 @@
+{
+  "docid": "1229",
+  "url": "https://bundestagszusammenfasser.de/details?docid=1229",
+  "scrapedAt": "2026-07-30T20:28:45.142Z",
+  "title": "Gesetz zur Ermöglichung des Verzichts auf die Amtsbezüge durch Mitglieder der Bundesregierung und Parlamentarische Staatssekretäre",
+  "statusImageAlt": null,
+  "sections": {
+    "Basics": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Offizieller Titel": "Gesetz zur Ermöglichung des Verzichts auf die Amtsbezüge durch Mitglieder der Bundesregierung und Parlamentarische Staatssekretäre",
+            "Initiator": "AfD",
+            "Status": "Abgelehnt",
+            "Letzte Änderung": "10.07.2026",
+            "Drucksache": {
+              "text": "21/5477 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/054/2105477.pdf"
+            },
+            "Gesetztyp": "Einspruchsgesetz",
+            "Exekutiver Fußabdruck": "❌ Nicht vorhanden.",
+            "Verbändebeteiligung": "Kein Zeitraum angegeben."
+          }
+        }
+      ],
+      "text": null
+    },
+    "Zusammenfassung": {
+      "tables": [],
+      "text": "Diese Zusammenfassung wurde mit GPT4 erstellt und kann Fehler enthalten.Basisinformationen:\nDas wesentliche Ziel des Gesetzentwurfs ist es, Mitgliedern der Bundesregierung und Parlamentarischen Staatssekretären zu ermöglichen, freiwillig auf Teile ihrer Amtsbezüge zu verzichten. Damit soll ihnen die Möglichkeit gegeben werden, Solidarität mit der Bevölkerung zu zeigen und einen Beitrag zur Konsolidierung des Haushalts zu leisten. Die Lösung besteht in einer Änderung des Bundesministergesetzes und des Gesetzes über die Rechtsverhältnisse der Parlamentarischen Staatssekretäre, sodass der bisherige gesetzliche Ausschluss eines Verzichts auf Bezüge für diese Personengruppe aufgehoben wird. Der Entwurf stammt von Abgeordneten der AfD-Fraktion, nicht von der Bundesregierung; ein federführendes Ministerium ist daher nicht benannt.\nHintergrund:\nIm Gesetzentwurf wird ausführlich auf die wirtschaftliche Lage Deutschlands eingegangen: Stagnation, Rückgang des BIP, hohe Energiepreise, Rückgang der industriellen Produktion, internationale Handelskonflikte, steigende Arbeitslosigkeit und Unsicherheiten durch den Krieg in der Ukraine. Es wird darauf hingewiesen, dass trotz der Krise die Amtsbezüge der Regierungsmitglieder gestiegen sind. In anderen Ländern (z.B. Neuseeland, USA) haben Regierungsmitglieder auf Teile ihrer Bezüge verzichtet. In Deutschland ist dies bislang gesetzlich nicht möglich, was als Missstand dargestellt wird.\nKosten:\nFür den Bundeshaushalt entstehen durch die Gesetzesänderung keine unmittelbaren Ausgaben. Es wird jedoch erwartet, dass durch den freiwilligen Verzicht auf Bezüge Minderausgaben für den Bund entstehen können. Die Höhe dieser Einsparungen ist nicht bezifferbar, da unklar ist, wie viele Regierungsmitglieder tatsächlich auf Bezüge verzichten werden. Für die Länder entstehen keine Kosten. Einnahmen werden nicht erwartet, sondern lediglich Einsparungen durch geringere Ausgaben.\nInkrafttreten:\nKeine Angaben zum Inkrafttreten. Es ist daher davon auszugehen, dass das Gesetz am Tag nach der Verkündung in Kraft treten soll.\nSonstiges:\nDer Entwurf sieht keine Befristung vor; die Möglichkeit zum Verzicht auf Bezüge soll dauerhaft bestehen. Es wird keine besondere Eilbedürftigkeit erwähnt. Der Erfüllungsaufwand für Verwaltung, Bürger und Wirtschaft ist laut Entwurf vernachlässigbar bzw. nicht vorhanden. Die Gesetzgebungskompetenz des Bundes wird genannt, ebenso die Vereinbarkeit mit EU-Recht. Weitere Gesetzesfolgen, Nachhaltigkeitsaspekte oder Rechts- und Verwaltungsvereinfachungen werden nicht erwartet.\nMaßnahmen:\nWichtigste Maßnahmen des Gesetzentwurfs:\n- Mitglieder der Bundesregierung und Parlamentarische Staatssekretäre sollen künftig auf einen Teil ihrer Bezüge verzichten können.\n- Bisher ist ein vollständiger oder teilweiser Verzicht auf die Amtsbezüge für diesen Personenkreis nicht möglich.\n- Der Gesetzentwurf stellt klar, dass die Regelung des Bundesbesoldungsgesetzes zum Verzicht auf Besoldung nicht für Mitglieder der Bundesregierung und Parlamentarische Staatssekretäre gilt.\n- Ziel ist es, diesen Personen angesichts gesellschaftlicher Krisen (Ukraine-Krieg, Inflation, Corona) die Möglichkeit zu geben, Solidarität zu zeigen."
+    },
+    "Beratungsverlauf im Bundestag": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Eingang im Bundestag": "21.04.2026",
+            "Erste Beratung": "23.04.2026",
+            "Abstimmung": "10.07.2026",
+            "Drucksache": {
+              "text": "21/5477 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/054/2105477.pdf"
+            },
+            "Plenarsitzungen": {
+              "text": "Aufzeichnungen und Dokumente",
+              "href": "https://www.bundestag.de/dokumente/textarchiv/2026/kw28-de-abgeordnetengesetz-1192574"
+            }
+          }
+        },
+        {
+          "type": "list",
+          "headers": [
+            "Ausschuss",
+            "Sitzungsdatum",
+            "Tagesordnung (PDF)"
+          ],
+          "rows": [
+            [
+              "Ausschuss für Recht und Verbraucherschutz",
+              "24.06.2026",
+              {
+                "text": "TagesordnungTagesordnung",
+                "href": "https://www.bundestag.de/resource/blob/1188062/to_011.pdf"
+              }
+            ],
+            [
+              "Haushaltsausschuss",
+              "24.06.2026",
+              {
+                "text": "Tagesordnung",
+                "href": "https://www.bundestag.de/resource/blob/1187970/to_041.pdf"
+              }
+            ]
+          ]
+        }
+      ],
+      "text": "AusschusssitzungenDie Daten wurden mit GPT4 ermittelt und können Fehler enthalten. Im Zweifel bitte die verlinkten Dokumente prüfen."
+    },
+    "Weiterführende Links": {
+      "tables": [],
+      "text": "Vorgangseite auf bundestag.de\nAufzeichnungen und Dokumente der Plenarsitzungen"
+    }
+  },
+  "listRowCells": [
+    "10.07.2026",
+    "Gesetz zur Ermöglichung des Verzichts auf die Amtsbezüge durch Mitglieder der Bundesregierung und Parlamentarische Staatssekretäre",
+    "AfD"
+  ]
+}

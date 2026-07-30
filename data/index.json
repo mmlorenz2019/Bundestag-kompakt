@@ -33,6 +33,192 @@
     "naechsteSchritte": "Der Entwurf ist am 29.07.2026 im Bundestag eingegangen, wurde dort aber noch nicht beraten. Der Bundesrat hat bereits im ersten Durchgang eine Stellungnahme abgegeben. Es steht noch die erste Lesung im Bundestag aus."
   },
   {
+    "docid": "1209",
+    "url": "https://bundestagszusammenfasser.de/details?docid=1209",
+    "letzteAenderung": "29.07.2026",
+    "titel": "Bund entlastet Länder und Kommunen finanziell",
+    "zusammenfassung": "Mit einem zeitlich befristeten Entlastungspaket sollen Länder und Kommunen finanziell besser dastehen. Finanzstarke Länder werden beim Finanzkraftausgleich entlastet, finanzschwache Länder erhalten höhere Bundesergänzungszuweisungen. Neu eingeführt werden zudem Sonderbedarfs-Bundesergänzungszuweisungen, die insbesondere bei kommunalen Altschulden helfen sollen. Außerdem übernimmt der Bund künftig einen größeren Anteil der Lasten aus dem Anspruchs- und Anwartschaftsüberführungsgesetz zugunsten der ostdeutschen Länder. Ein Antrag der Linken, der weitergehende Forderungen enthielt, wurde im gleichen Zug abgelehnt.",
+    "abstimmungsergebnis": {
+      "art": "Ausschuss-Empfehlung",
+      "ausgang": "angenommen",
+      "dafuer": [
+        "CDU/CSU",
+        "SPD"
+      ],
+      "dagegen": [
+        "Bündnis 90/Die Grünen",
+        "Die Linke"
+      ],
+      "enthalten": [
+        "AfD"
+      ]
+    },
+    "eingebrachtVon": "Bundesregierung (Bundesministerium für Finanzen)",
+    "themenbereich": "Finanzen",
+    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+  },
+  {
+    "docid": "1220",
+    "url": "https://bundestagszusammenfasser.de/details?docid=1220",
+    "letzteAenderung": "29.07.2026",
+    "titel": "Krankenkassen-Beiträge sollen stabil bleiben: Sparpaket im Gesundheitswesen beschlossen",
+    "zusammenfassung": "Um die Beitragssätze der gesetzlichen Krankenversicherung ab 2027 dauerhaft zu stabilisieren, wird ein umfassendes Sparpaket beschlossen. Hintergrund ist eine strukturelle Finanzierungslücke, die sonst zu weiter steigenden Zusatzbeiträgen führen würde. Kern des Pakets: Vergütungs- und Preisanstiege im Gesundheitswesen werden an die Entwicklung der beitragspflichtigen Einnahmen gekoppelt, kostenintensive Sondervergütungen werden gestrichen, und Versicherte werden moderat stärker an Kosten beteiligt (z.B. bei Zuzahlungen und Zahnersatz). Auch auf der Einnahmenseite wird nachgesteuert, etwa durch höhere Beiträge für Minijobs. Zusätzlich wurde eine Entschließung angenommen, die u.a. besondere Regelungen zur Sicherstellung der psychotherapeutischen Versorgung fordert.",
+    "abstimmungsergebnis": {
+      "art": "Ausschuss-Empfehlung",
+      "ausgang": "angenommen",
+      "dafuer": [
+        "CDU/CSU",
+        "SPD"
+      ],
+      "dagegen": [
+        "AfD",
+        "Bündnis 90/Die Grünen",
+        "Die Linke"
+      ],
+      "enthalten": []
+    },
+    "eingebrachtVon": "Bundesregierung (Bundesministerium für Gesundheit)",
+    "themenbereich": "Gesundheit",
+    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+  },
+  {
+    "docid": "1127",
+    "url": "https://bundestagszusammenfasser.de/details?docid=1127",
+    "letzteAenderung": "28.07.2026",
+    "titel": "Migrationsämter werden digitaler: Biometrische Daten künftig zentral gespeichert",
+    "zusammenfassung": "Die Digitalisierung in der Migrationsverwaltung soll vorangetrieben werden, um Verwaltungsprozesse zu beschleunigen und Bürokratie abzubauen. Dafür werden biometrische Daten (Lichtbild, Fingerabdrücke, Unterschrift) bei elektronischen Aufenthaltstiteln zentral gespeichert und nachnutzbar gemacht, ebenso Identitätsklärungsdaten im Ausländerzentralregister. Zusätzlich werden Behörden künftig automatisch per Push-Benachrichtigung über aufenthaltsrechtliche Entscheidungen informiert, und der Datenaustausch zwischen Behörden wird weiter automatisiert. Das Gesetz setzt damit Vereinbarungen aus dem Koalitionsvertrag sowie einen Beschluss der Ministerpräsidentenkonferenz um.",
+    "abstimmungsergebnis": {
+      "art": "Ausschuss-Empfehlung",
+      "ausgang": "angenommen",
+      "dafuer": [
+        "CDU/CSU",
+        "AfD",
+        "SPD"
+      ],
+      "dagegen": [
+        "Die Linke"
+      ],
+      "enthalten": [
+        "Bündnis 90/Die Grünen"
+      ]
+    },
+    "eingebrachtVon": "Bundesregierung (Bundesministerium des Innern)",
+    "themenbereich": "Migration",
+    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+  },
+  {
+    "docid": "1158",
+    "url": "https://bundestagszusammenfasser.de/details?docid=1158",
+    "letzteAenderung": "28.07.2026",
+    "titel": "Heizungsgesetz gelockert: Zwang zu 65 Prozent Ökoheizung fällt weg",
+    "zusammenfassung": "Das bisherige Gebäudeenergiegesetz (\"Heizungsgesetz\") wird durch ein neues, technologieoffeneres Gebäudemodernisierungsgesetz ersetzt. Die bisherige Pflicht, beim Heizungstausch mindestens 65% erneuerbare Energien zu nutzen, entfällt. Eigentümer:innen bekommen wieder mehr Entscheidungsfreiheit beim Heizungstyp und können auch weiterhin Gas- oder Ölheizungen einbauen lassen – allerdings müssen ab 2029 schrittweise steigende Anteile klimafreundlicher Brennstoffe (\"Bio-Treppe\") beigemischt werden. Gleichzeitig wird eine EU-Gebäuderichtlinie umgesetzt, u.a. mit neuen Effizienzanforderungen und Renovierungspflichten für Nichtwohngebäude. Zusätzlich beschlossen wurde eine Entschließung, die u.a. die Fortführung der Förderung für effiziente Gebäude und mehr Übersichtlichkeit bei Förderangeboten fordert.",
+    "abstimmungsergebnis": {
+      "art": "Ausschuss-Empfehlung",
+      "ausgang": "angenommen",
+      "dafuer": [
+        "CDU/CSU",
+        "SPD"
+      ],
+      "dagegen": [
+        "AfD",
+        "Bündnis 90/Die Grünen",
+        "Die Linke"
+      ],
+      "enthalten": []
+    },
+    "eingebrachtVon": "Bundesregierung (Bundesministerium für Wirtschaft und Energie)",
+    "themenbereich": "Energie",
+    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+  },
+  {
+    "docid": "1191",
+    "url": "https://bundestagszusammenfasser.de/details?docid=1191",
+    "letzteAenderung": "23.07.2026",
+    "titel": "Neue Notfallregeln für Elektrogeräte bei EU-weiten Krisen",
+    "zusammenfassung": "Zwei EU-Richtlinien zu elektromagnetischer Verträglichkeit und Funkanlagen werden ins deutsche Recht übernommen. Kern ist die Einführung neuer Notfallverfahren, die greifen, wenn die EU einen \"Binnenmarkt-Notfall\" feststellt – ähnlich den Lieferengpässen während der Corona-Pandemie. Ziel ist, dass krisenrelevante Elektro- und Funkgeräte auch in solchen Krisensituationen verfügbar bleiben. Ergänzend wurde eine fachfremde Änderung eingefügt: Unternehmen mit großen Bauvorhaben erhalten erleichterten Zugang zur Förderung von Effizienzhäusern/-gebäuden 55 – der Trojanercheck der Quelle weist ausdrücklich auf diese sachfremde Ergänzung hin.",
+    "abstimmungsergebnis": {
+      "art": "Ausschuss-Empfehlung",
+      "ausgang": "angenommen",
+      "dafuer": [
+        "CDU/CSU",
+        "AfD",
+        "SPD",
+        "Bündnis 90/Die Grünen"
+      ],
+      "dagegen": [],
+      "enthalten": [
+        "Die Linke"
+      ]
+    },
+    "eingebrachtVon": "Bundesregierung (Bundesministerium für Wirtschaft und Energie)",
+    "themenbereich": "Wirtschaft",
+    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+  },
+  {
+    "docid": "1282",
+    "url": "https://bundestagszusammenfasser.de/details?docid=1282",
+    "letzteAenderung": "22.07.2026",
+    "titel": "Abgeordnete verzichten 2026 auf reguläre Diätenerhöhung",
+    "zusammenfassung": "Eigentlich würden sich die Abgeordneten-Diäten jedes Jahr automatisch an die Lohnentwicklung anpassen – 2026 hätte das trotz angespannter Haushaltslage eine Erhöhung bedeutet (Nominallohnsteigerung 2025: 4,2%). CDU/CSU und SPD haben per Gesetz beschlossen, für 2026 ausnahmsweise von dieser automatischen Anpassung abzuweichen und die Diäten nicht zu erhöhen, um in wirtschaftlich schwieriger Zeit ein Signal der Solidarität zu setzen. Ein alternativer Gesetzentwurf der AfD zum selben Thema wurde im gleichen Zug abgelehnt, Entwürfe von Grünen und Linken wurden für erledigt erklärt. Zusätzlich wurde die Einführung einer elektronischen Anwesenheitsliste für Abgeordnete beschlossen.",
+    "abstimmungsergebnis": {
+      "art": "Ausschuss-Empfehlung (einstimmig)",
+      "ausgang": "angenommen",
+      "dafuer": [
+        "CDU/CSU",
+        "SPD",
+        "AfD",
+        "Bündnis 90/Die Grünen",
+        "Die Linke"
+      ],
+      "dagegen": [],
+      "enthalten": []
+    },
+    "eingebrachtVon": "Regierungsfraktionen (CDU/CSU, SPD)",
+    "themenbereich": "Staat / Parlament",
+    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+  },
+  {
+    "docid": "1225",
+    "url": "https://bundestagszusammenfasser.de/details?docid=1225",
+    "letzteAenderung": "21.07.2026",
+    "titel": "Neuer Kapazitätsmarkt für Strom: Anreize für Kraftwerke zur Versorgungssicherung",
+    "zusammenfassung": "Um die Stromversorgung Deutschlands langfristig (mit Blick auf 2031) zu sichern, wird ein sogenannter Kapazitätsmarkt eingeführt. Durch den Kohleausstieg und den wachsenden Anteil erneuerbarer Energien wird zusätzliche, steuerbare Kraftwerksleistung gebraucht. Über wettbewerbliche Ausschreibungen erhalten Anbieter künftig eine Vergütung dafür, dass sie ihre Anlagen zu einem bestimmten Zeitpunkt betriebsbereit halten. Zusätzlich wurde eine Entschließung angenommen, die u.a. Verbesserungen für Kleinanlagenpools, einen schnelleren Smart-Meter-Rollout und eine bessere Einbindung dezentraler Flexibilitäten fordert. Anträge von AfD, Grünen und Linken zum Thema wurden im selben Zug abgelehnt.",
+    "abstimmungsergebnis": {
+      "art": "Ausschuss-Empfehlung",
+      "ausgang": "angenommen",
+      "dafuer": [
+        "CDU/CSU",
+        "SPD"
+      ],
+      "dagegen": [
+        "AfD",
+        "Bündnis 90/Die Grünen",
+        "Die Linke"
+      ],
+      "enthalten": []
+    },
+    "eingebrachtVon": "Bundesregierung (Bundesministerium für Wirtschaft und Energie)",
+    "themenbereich": "Energie",
+    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+  },
+  {
+    "docid": "1229",
+    "url": "https://bundestagszusammenfasser.de/details?docid=1229",
+    "letzteAenderung": "10.07.2026",
+    "titel": "AfD-Vorschlag zum freiwilligen Amtsbezüge-Verzicht abgelehnt",
+    "zusammenfassung": "Die AfD-Fraktion wollte Regierungsmitgliedern und Parlamentarischen Staatssekretären ausdrücklich ermöglichen, freiwillig auf Teile ihrer Amtsbezüge zu verzichten – aktuell ist ein solcher Verzicht gesetzlich ausgeschlossen. Begründet wurde der Vorschlag mit der angespannten Wirtschaftslage (Stagnation, sinkendes BIP, hohe Energiepreise, steigende Arbeitslosigkeit). Der Bundestag hat den Gesetzentwurf abgelehnt.",
+    "abstimmungsergebnis": {
+      "art": "Abstimmung im Plenum – genaue Fraktionsaufschlüsselung in der Quelle nicht dokumentiert",
+      "ausgang": "abgelehnt",
+      "dafuer": [],
+      "dagegen": [],
+      "enthalten": []
+    },
+    "eingebrachtVon": "AfD-Fraktion",
+    "themenbereich": "Staat / Parlament",
+    "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)"
+  },
+  {
     "docid": "1152",
     "url": "https://bundestagszusammenfasser.de/details?docid=1152",
     "letzteAenderung": "09.07.2026",
@@ -55,5 +241,53 @@
     "eingebrachtVon": "Bundesregierung (Bundesministerium für Finanzen)",
     "themenbereich": "Soziales / Familie",
     "naechsteSchritte": "Muss noch durch den Bundesrat (dort bereits einmal beraten, Status \"Beraten\", noch nicht final abgestimmt)"
+  },
+  {
+    "docid": "1214",
+    "url": "https://bundestagszusammenfasser.de/details?docid=1214",
+    "letzteAenderung": "09.07.2026",
+    "titel": "Tempolimit 130 km/h abgelehnt",
+    "zusammenfassung": "Die Grünen-Fraktion wollte ein generelles Tempolimit von 130 km/h auf Autobahnen einführen, um Kraftstoffverbrauch und Verbraucherpreise zu senken, Klimaziele zu unterstützen und die Verkehrssicherheit zu erhöhen. Als Anlass wurde u.a. auf den Krieg im Nahen Osten und dadurch gestiegene Ölpreise verwiesen; die Bundesregierung sollte fünf Monate nach Inkrafttreten einen Evaluierungsbericht vorlegen. Der Bundestag hat den Vorschlag abgelehnt.",
+    "abstimmungsergebnis": {
+      "art": "Abstimmung im Plenum",
+      "ausgang": "abgelehnt",
+      "dafuer": [
+        "Bündnis 90/Die Grünen",
+        "Die Linke"
+      ],
+      "dagegen": [
+        "CDU/CSU",
+        "AfD",
+        "SPD"
+      ],
+      "enthalten": []
+    },
+    "eingebrachtVon": "Bündnis 90/Die Grünen (Fraktion)",
+    "themenbereich": "Verkehr",
+    "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)"
+  },
+  {
+    "docid": "1255",
+    "url": "https://bundestagszusammenfasser.de/details?docid=1255",
+    "letzteAenderung": "09.07.2026",
+    "titel": "Kindergeld für Kinder im EU-Ausland: AfD-Vorschlag abgelehnt",
+    "zusammenfassung": "Die AfD-Fraktion wollte das Kindergeld für Kinder, die in einem anderen EU-Land leben, an das dortige Preisniveau anpassen (bei niedrigerem Preisniveau also kürzen). Der Bundestag hat diesen Vorschlag im selben Zug abgelehnt, in dem er das reguläre Kindergeld-Reformgesetz (antragsloses Kindergeld) beschlossen hat – unter anderem, weil eine solche Kürzung laut Rechtsprechung des Europäischen Gerichtshofs unionsrechtswidrig wäre.",
+    "abstimmungsergebnis": {
+      "art": "Ausschuss-Empfehlung",
+      "ausgang": "abgelehnt",
+      "dafuer": [
+        "AfD"
+      ],
+      "dagegen": [
+        "CDU/CSU",
+        "SPD",
+        "Bündnis 90/Die Grünen",
+        "Die Linke"
+      ],
+      "enthalten": []
+    },
+    "eingebrachtVon": "AfD-Fraktion",
+    "themenbereich": "Soziales / Familie",
+    "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)"
   }
 ]

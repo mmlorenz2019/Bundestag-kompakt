@@ -1,0 +1,135 @@
+{
+  "docid": "1214",
+  "url": "https://bundestagszusammenfasser.de/details?docid=1214",
+  "scrapedAt": "2026-07-30T20:28:45.524Z",
+  "title": "Gesetz zur Änderung des Straßenverkehrsgesetzes (Tempolimit)",
+  "statusImageAlt": null,
+  "sections": {
+    "Basics": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Offizieller Titel": "Gesetz zur Änderung des Straßenverkehrsgesetzes (Tempolimit)",
+            "Initiator": "B90/Grüne",
+            "Status": "Abgelehnt",
+            "Letzte Änderung": "09.07.2026",
+            "Drucksache": {
+              "text": "21/5319 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/053/2105319.pdf"
+            },
+            "Beschlussempfehlung": {
+              "text": "21/6734 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/067/2106734.pdf"
+            },
+            "Gesetztyp": "Einspruchsgesetz",
+            "Exekutiver Fußabdruck": "❌ Nicht vorhanden.",
+            "Verbändebeteiligung": "Kein Zeitraum angegeben.",
+            "Trojanercheck ": ""
+          }
+        }
+      ],
+      "text": null
+    },
+    "Zusammenfassung": {
+      "tables": [],
+      "text": "Diese Zusammenfassung wurde mit GPT4 erstellt und kann Fehler enthalten.Basisinformationen:\nDas wesentliche Ziel des Gesetzentwurfs ist die Einführung einer allgemeinen Höchstgeschwindigkeit von 130 km/h im Straßenverkehr. Damit sollen der Kraftstoffverbrauch gesenkt, Verbraucherpreise gedämpft, die Erreichung der deutschen Klimaschutzziele gefördert, die Luftreinhaltung verbessert und die Verkehrssicherheit gestärkt werden. Der Entwurf stammt von Abgeordneten der Fraktion BÜNDNIS 90/DIE GRÜNEN, nicht von der Bundesregierung; ein federführendes Ministerium ist daher nicht genannt.\nHintergrund:\nDer Gesetzentwurf verweist auf den Krieg im Nahen Osten, der zu erheblichen Störungen auf den internationalen Ölmärkten und steigenden Energiepreisen geführt hat. Die Internationale Energieagentur empfiehlt Maßnahmen zur Senkung der Ölnachfrage. Der Straßenverkehr ist Hauptverbraucher von Erdöl in der EU und Hauptverursacher von CO2-Emissionen im Verkehrssektor, der die Klimaziele gefährdet. Zudem wird auf die hohe Zahl von Verkehrstoten und Schwerverletzten sowie auf die Rolle des Straßenverkehrs bei der Luftverschmutzung hingewiesen.\nKosten:\nKeine Angaben.\nInkrafttreten:\nKeine Angaben. (Daher ist davon auszugehen, dass das Gesetz am Tag nach der Verkündung in Kraft treten soll.)\nSonstiges:\nDer Entwurf betont, dass es keine Alternativen gibt, die die angestrebten Ziele ebenso schnell, wirksam und kostengünstig erreichen könnten. Die Gesetzgebungskompetenz wird auf Art. 74 Abs. 1 Nr. 22 und 24 GG gestützt. Eine besondere Eilbedürftigkeit wird nicht ausdrücklich erwähnt.\nMaßnahmen:\n- Die zulässige Höchstgeschwindigkeit darf per Verordnung künftig maximal 130 km/h betragen.\n- Die Verordnungsermächtigung zur Festlegung der Höchstgeschwindigkeit wird in einer eigenen Nummer geregelt und auf 130 km/h begrenzt.\n- Die Straßenverkehrs-Ordnung wird entsprechend angepasst, damit die Gesetzesänderung schnell wirksam wird."
+    },
+    "Beratungsverlauf im Bundestag": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Eingang im Bundestag": "14.04.2026",
+            "Erste Beratung": "16.04.2026",
+            "Abstimmung": "09.07.2026",
+            "Drucksache": {
+              "text": "21/5319 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/053/2105319.pdf"
+            },
+            "Beschlussempfehlung": {
+              "text": "21/6734 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/067/2106734.pdf"
+            },
+            "Plenarsitzungen": {
+              "text": "Aufzeichnungen und Dokumente",
+              "href": "https://www.bundestag.de/dokumente/textarchiv/2026/kw28-de-strassenverkehrsgesetz-1192582"
+            }
+          }
+        },
+        {
+          "type": "list",
+          "headers": [
+            "Ausschuss",
+            "Sitzungsdatum",
+            "Tagesordnung (PDF)"
+          ],
+          "rows": [
+            [
+              "Ausschuss für Umwelt, Klimaschutz, Naturschutz und nukleare Sicherheit",
+              "22.04.2026",
+              {
+                "text": "Tagesordnung",
+                "href": "https://www.bundestag.de/resource/blob/1166076/to-034.pdf"
+              }
+            ],
+            [
+              "Verkehrsausschuss",
+              "22.04.2026",
+              {
+                "text": "Tagesordnung",
+                "href": "https://www.bundestag.de/resource/blob/1165842/30-Sitzung-22-04-2026.pdf"
+              }
+            ],
+            [
+              "Ausschuss für Umwelt, Klimaschutz, Naturschutz und nukleare Sicherheit",
+              "06.05.2026",
+              {
+                "text": "Tagesordnung",
+                "href": "https://www.bundestag.de/resource/blob/1173784/to-036.pdf"
+              }
+            ],
+            [
+              "Verkehrsausschuss",
+              "06.05.2026",
+              {
+                "text": "Tagesordnung",
+                "href": "https://www.bundestag.de/resource/blob/1173254/31-Sitzung-06-05-2026.pdf"
+              }
+            ],
+            [
+              "Ausschuss für Umwelt, Klimaschutz, Naturschutz und nukleare Sicherheit",
+              "24.06.2026",
+              {
+                "text": "Tagesordnung",
+                "href": "https://www.bundestag.de/resource/blob/1190810/to-039.pdf"
+              }
+            ],
+            [
+              "Verkehrsausschuss",
+              "24.06.2026",
+              {
+                "text": "Tagesordnung",
+                "href": "https://www.bundestag.de/resource/blob/1188064/34-Sitzung-24-06-2026.pdf"
+              }
+            ]
+          ]
+        }
+      ],
+      "text": "AusschusssitzungenDie Daten wurden mit GPT4 ermittelt und können Fehler enthalten. Im Zweifel bitte die verlinkten Dokumente prüfen."
+    },
+    "Beschlussempfehlung": {
+      "tables": [],
+      "text": "Zusammenfassung der BeschlussempfehlungDiese Zusammenfassung wurde mit GPT4 auf Basis des Textes des Beschlussempfehlung erstellt.Beratungsverlauf:\nDer federführende Ausschuss war der Verkehrsausschuss (15. Ausschuss). Mitberatend war der Ausschuss für Umwelt, Klimaschutz, Naturschutz und nukleare Sicherheit.\nBeschlussempfehlung:\nDie Beschlussempfehlung des Verkehrsausschusses lautet, den Gesetzentwurf auf Drucksache 21/5319 abzulehnen. Dieser Empfehlung haben die Fraktionen der CDU/CSU, AfD und SPD zugestimmt. Die Fraktionen BÜNDNIS 90/DIE GRÜNEN und Die Linke haben dagegen gestimmt. Ein Entschließungsantrag wird nicht erwähnt.\nÄnderungen:\nEs wurden keine Änderungen am Gesetzentwurf vorgenommen. Es gibt keine Hinweise auf Änderungen, die sich auf den ursprünglichen Entwurf oder andere Gesetze beziehen.\nBegründung:\nDie Begründung des ursprünglichen Gesetzentwurfs ist, dass eine allgemeine Höchstgeschwindigkeit von 130 km/h den Kraftstoffverbrauch senken, die Preise für Verbraucher dämpfen, die Verkehrssicherheit erhöhen und die Emissionen von Treibhausgasen und Luftschadstoffen reduzieren würde. Außerdem sollte die Bundesregierung fünf Monate nach Inkrafttreten einen Evaluierungsbericht vorlegen. Eine Begründung für die Ablehnung durch die Ausschüsse wird nicht gegeben.\nStatements der Fraktionen:\nKeine Angaben."
+    },
+    "Weiterführende Links": {
+      "tables": [],
+      "text": "Vorgangseite auf bundestag.de\nAufzeichnungen und Dokumente der Plenarsitzungen"
+    }
+  },
+  "listRowCells": [
+    "09.07.2026",
+    "Gesetz zur Änderung des Straßenverkehrsgesetzes (Tempolimit)",
+    "B90/Grüne"
+  ]
+}
