@@ -1,6 +1,6 @@
 ---
 tags: [app-idee, privat]
-status: in Umsetzung (Phase 0-2 abgeschlossen, Phase 3 als nächstes)
+status: in Umsetzung (Phase 0-3 abgeschlossen, Phase 4 als nächstes)
 erstellt: 2026-07-25
 aktualisiert: 2026-07-30
 projektname: Bundestag-Kompakt
@@ -94,8 +94,8 @@ Nach jeder Phase: stoppen, gemeinsam testen/besprechen, erst dann weiter.
 
 - [x] **Phase 0 – Grundgerüst:** GitHub-Repo anlegen, GitHub Pages einrichten (leere Platzhalter-Seite im Navy/Slate-Design) — Hosting-Kette steht von Anfang an. *Abgeschlossen 2026-07-30: Repo [github.com/mmlorenz2019/Bundestag-kompakt](https://github.com/mmlorenz2019/Bundestag-kompakt), live unter [mmlorenz2019.github.io/Bundestag-kompakt](https://mmlorenz2019.github.io/Bundestag-kompakt/)*
 - [x] **Phase 1 – Scraping/Datenbasis:** Skript ruft bundestagszusammenfasser.de ab und liest rohe Einträge strukturiert ein (noch ohne KI-Zusammenfassung). *Abgeschlossen 2026-07-30: [scripts/scrape.js](scripts/scrape.js), reines HTTP-Fetch ohne JS-Rendering nötig, 7 Beispiel-Rohdaten in [data/raw/](data/raw/)*
-- [x] **Phase 2 – KI-Zusammenfassung:** Rohdaten aus Phase 1 ins vereinbarte Format bringen (Titel, Zusammenfassung, strukturiertes Abstimmungsergebnis inkl. Ausgang angenommen/abgelehnt, Einbringer, Themenbereich, nächste Schritte) — Testfälle: Kindergeld-Beispiel + Fluglärm (laufend, noch keine Abstimmung). *Abgeschlossen 2026-07-30: [scripts/summarize.js](scripts/summarize.js) (ruft später Anthropic-API, noch ungetestet mangels API-Key), Testergebnisse in [data/entries/](data/entries/), Vorschau unter [preview-phase2.html](https://mmlorenz2019.github.io/Bundestag-kompakt/preview-phase2.html)*
-- [ ] **Phase 3 – Automatisierung:** GitHub Actions Cronjob (1x täglich, Mo–Fr) führt Phase 1+2 automatisch aus, schreibt Ergebnis ins Repo, inkl. "nichts Neues"-Fall
+- [x] **Phase 2 – KI-Zusammenfassung:** Rohdaten aus Phase 1 ins vereinbarte Format bringen (Titel, Zusammenfassung, strukturiertes Abstimmungsergebnis inkl. Ausgang angenommen/abgelehnt, Einbringer, Themenbereich, nächste Schritte) — Testfälle: Kindergeld-Beispiel + Fluglärm (laufend, noch keine Abstimmung). *Abgeschlossen 2026-07-30: [scripts/summarize.js](scripts/summarize.js), Testergebnisse in [data/entries/](data/entries/), Vorschau unter [preview-phase2.html](https://mmlorenz2019.github.io/Bundestag-kompakt/preview-phase2.html)*
+- [x] **Phase 3 – Automatisierung:** GitHub Actions Cronjob (1x täglich, Mo–Fr) führt Phase 1+2 automatisch aus, schreibt Ergebnis ins Repo, inkl. "nichts Neues"-Fall. *Abgeschlossen 2026-07-30: [.github/workflows/daily.yml](.github/workflows/daily.yml), inkrementell per Manifest ([data/raw/_manifest.json](data/raw/_manifest.json)) statt täglich alle ~350 Vorgänge neu abzurufen, End-to-End getestet (Commit [df903a6](https://github.com/mmlorenz2019/Bundestag-kompakt/commit/df903a61b43c528a95d9e177ca6a296c234eac2b)). Anthropic-API-Key liegt als Repo-Secret. Offen: einmaliger voller Backfill der Alt-Historie war bewusst nicht Teil von Phase 3 (Kostengründe) — aktuell sind nur die zum Start bereits geholten 7 Testfälle + künftige Änderungen vollständig archiviert*
 - [ ] **Phase 4 – Webseite/Frontend:** Themen-gruppierte Liste + Detailansicht (Navy/Slate, wie im Mockup), liest die von Phase 3 erzeugten Daten
 - [ ] **Phase 5 – End-to-End-Test & Go-Live:** Automatik-Durchlauf → Webseite aktualisiert sich → auf dem Handy als PWA installierbar (analog Blutdruck-App), ein paar Tage Zuverlässigkeit beobachten
 
