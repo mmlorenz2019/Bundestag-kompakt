@@ -1,6 +1,6 @@
 ---
 tags: [app-idee, privat]
-status: in Umsetzung (Phase 0-3 abgeschlossen, Phase 4 als nächstes)
+status: in Umsetzung (Phase 0-5 im Kern abgeschlossen, Restpunkte aus Phase 5 offen)
 erstellt: 2026-07-25
 aktualisiert: 2026-07-30
 projektname: Bundestag-Kompakt
@@ -96,8 +96,8 @@ Nach jeder Phase: stoppen, gemeinsam testen/besprechen, erst dann weiter.
 - [x] **Phase 1 – Scraping/Datenbasis:** Skript ruft bundestagszusammenfasser.de ab und liest rohe Einträge strukturiert ein (noch ohne KI-Zusammenfassung). *Abgeschlossen 2026-07-30: [scripts/scrape.js](scripts/scrape.js), reines HTTP-Fetch ohne JS-Rendering nötig, 7 Beispiel-Rohdaten in [data/raw/](data/raw/)*
 - [x] **Phase 2 – KI-Zusammenfassung:** Rohdaten aus Phase 1 ins vereinbarte Format bringen (Titel, Zusammenfassung, strukturiertes Abstimmungsergebnis inkl. Ausgang angenommen/abgelehnt, Einbringer, Themenbereich, nächste Schritte) — Testfälle: Kindergeld-Beispiel + Fluglärm (laufend, noch keine Abstimmung). *Abgeschlossen 2026-07-30: [scripts/summarize.js](scripts/summarize.js), Testergebnisse in [data/entries/](data/entries/), Vorschau unter [preview-phase2.html](https://mmlorenz2019.github.io/Bundestag-kompakt/preview-phase2.html)*
 - [x] **Phase 3 – Automatisierung:** GitHub Actions Cronjob (1x täglich, Mo–Fr) führt Phase 1+2 automatisch aus, schreibt Ergebnis ins Repo, inkl. "nichts Neues"-Fall. *Abgeschlossen 2026-07-30: [.github/workflows/daily.yml](.github/workflows/daily.yml), inkrementell per Manifest ([data/raw/_manifest.json](data/raw/_manifest.json)) statt täglich alle ~350 Vorgänge neu abzurufen, End-to-End getestet (Commit [df903a6](https://github.com/mmlorenz2019/Bundestag-kompakt/commit/df903a61b43c528a95d9e177ca6a296c234eac2b)). Anthropic-API-Key liegt als Repo-Secret. Offen: einmaliger voller Backfill der Alt-Historie war bewusst nicht Teil von Phase 3 (Kostengründe) — aktuell sind nur die zum Start bereits geholten 7 Testfälle + künftige Änderungen vollständig archiviert*
-- [ ] **Phase 4 – Webseite/Frontend:** Themen-gruppierte Liste + Detailansicht (Navy/Slate, wie im Mockup), liest die von Phase 3 erzeugten Daten
-- [ ] **Phase 5 – End-to-End-Test & Go-Live:** Automatik-Durchlauf → Webseite aktualisiert sich → auf dem Handy als PWA installierbar (analog Blutdruck-App), ein paar Tage Zuverlässigkeit beobachten
+- [x] **Phase 4 – Webseite/Frontend:** Themen-gruppierte Liste + Detailansicht (Navy/Slate, wie im Mockup), liest die von Phase 3 erzeugten Daten. *Abgeschlossen 2026-07-30: [index.html](index.html) liest [data/index.json](data/index.json) (von [scripts/build-index.js](scripts/build-index.js) aus allen Einträgen zusammengebaut), inkl. Monats-Zeitraum-Filter für die Archiv-Navigation (blendet sich erst ein, sobald mehr als 1 Monat Daten vorhanden ist)*
+- [x] **Phase 5 – End-to-End-Test & Go-Live:** Automatik-Durchlauf → Webseite aktualisiert sich → auf dem Handy als PWA installierbar (analog Blutdruck-App), ein paar Tage Zuverlässigkeit beobachten. *Teilweise abgeschlossen 2026-07-30: PWA-Installierbarkeit (manifest.json + icon.svg), Sicherheits-Audit durchgeführt und beide Funde (XSS-Escaping, Workflow-Härtung) behoben, Archiv-Navigation gebaut. Noch offen: mehrtägige Zuverlässigkeitsbeobachtung des Cronjobs, Wochenüberblick-Sonntag-Konflikt, Kategorie-Lücke (Vorgang 1152 nicht mehr in überwachten Listen)*
 
 **Später, außerhalb dieses Plans:** Telegram-Bot für Push-Benachrichtigung (eigene Phase, wenn Phase 0-5 steht).
 
