@@ -83,17 +83,24 @@
     cursor: pointer;
     list-style: none;
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     gap: 0.75rem;
   }
-  .status-badge { margin-top: 0.15rem; }
   .card-summary::-webkit-details-marker { display: none; }
   .card-summary h2 {
+    flex: 1 1 auto;
+    min-width: 0;
     margin: 0;
     font-size: 1rem;
     font-weight: 600;
     color: var(--navy-800);
+  }
+  .summary-right {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-top: 0.15rem;
   }
   .chevron { color: var(--slate-400); flex-shrink: 0; transition: transform 0.15s ease; }
   details[open] .chevron { transform: rotate(90deg); }
@@ -189,8 +196,10 @@ function renderCard(entry) {
     <details class="card status-${status}">
       <summary class="card-summary">
         <h2>${esc(entry.titel)}</h2>
-        <span class="status-badge status-${status}">${STATUS_LABEL[status]}</span>
-        <span class="chevron">›</span>
+        <span class="summary-right">
+          <span class="status-badge status-${status}">${STATUS_LABEL[status]}</span>
+          <span class="chevron">›</span>
+        </span>
       </summary>
       <div class="card-body">
         <p>${esc(entry.zusammenfassung)}</p>
