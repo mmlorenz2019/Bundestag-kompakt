@@ -11,7 +11,12 @@
     --slate-600: #475569;
     --slate-400: #94a3b8;
     --slate-200: #e2e8f0;
+    --slate-100: #f1f5f9;
     --bg: #f8fafc;
+    --green-700: #15803d;
+    --green-100: #dcfce7;
+    --red-700: #b91c1c;
+    --red-100: #fee2e2;
   }
   * { box-sizing: border-box; }
   body {
@@ -25,44 +30,183 @@
     color: white;
     padding: 1.25rem 1.5rem;
   }
-  header h1 {
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: 600;
-  }
-  header p {
-    margin: 0.25rem 0 0;
-    color: var(--slate-400);
-    font-size: 0.875rem;
-  }
-  main {
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 3rem 1.5rem;
+  header h1 { margin: 0; font-size: 1.25rem; font-weight: 600; }
+  header p { margin: 0.25rem 0 0; color: var(--slate-400); font-size: 0.875rem; }
+  main { max-width: 720px; margin: 0 auto; padding: 1.5rem; }
+  .state-message {
     text-align: center;
-  }
-  .placeholder {
-    border: 1px dashed var(--slate-400);
-    border-radius: 12px;
-    padding: 2.5rem 1.5rem;
     color: var(--slate-600);
+    padding: 3rem 1rem;
   }
-  .placeholder h2 {
-    margin-top: 0;
+  .group-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--slate-600);
+    margin: 2rem 0 0.75rem;
+  }
+  .group-title:first-child { margin-top: 0; }
+  .card {
+    background: white;
+    border: 1px solid var(--slate-200);
+    border-left: 4px solid var(--slate-400);
+    border-radius: 12px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+  }
+  .card.status-angenommen { border-left-color: var(--green-700); }
+  .card.status-abgelehnt { border-left-color: var(--red-700); }
+  .card.status-offen { border-left-color: var(--slate-400); }
+  .card-summary {
+    padding: 1rem 1.1rem;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .card-summary::-webkit-details-marker { display: none; }
+  .card-summary h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
     color: var(--navy-800);
   }
+  .chevron { color: var(--slate-400); flex-shrink: 0; transition: transform 0.15s ease; }
+  details[open] .chevron { transform: rotate(90deg); }
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .status-badge.status-angenommen { background: var(--green-100); color: var(--green-700); }
+  .status-badge.status-abgelehnt { background: var(--red-100); color: var(--red-700); }
+  .status-badge.status-offen { background: var(--slate-100); color: var(--slate-600); }
+  .card-body {
+    padding: 0 1.1rem 1.1rem;
+    border-top: 1px solid var(--slate-100);
+  }
+  .card-body p { line-height: 1.55; color: var(--navy-800); white-space: pre-line; }
+  .field-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--slate-600);
+    margin: 1rem 0 0.35rem;
+  }
+  .vote-block { display: flex; flex-direction: column; gap: 0.4rem; }
+  .vote-row { display: flex; gap: 0.5rem; align-items: baseline; font-size: 0.9rem; flex-wrap: wrap; }
+  .vote-row .vote-label { min-width: 5.5rem; font-weight: 600; color: var(--slate-600); flex-shrink: 0; }
+  .pill { display: inline-block; padding: 0.15rem 0.55rem; border-radius: 999px; font-size: 0.8rem; margin: 0.1rem 0.25rem 0.1rem 0; }
+  .pill.fuer { background: var(--green-100); color: var(--green-700); }
+  .pill.gegen { background: var(--red-100); color: var(--red-700); }
+  .pill.enthalten { background: var(--slate-100); color: var(--slate-600); }
+  .no-vote { color: var(--slate-600); font-style: italic; font-size: 0.9rem; }
+  .meta-line { font-size: 0.85rem; color: var(--slate-600); margin: 0.2rem 0; }
+  .quelle { font-size: 0.8rem; margin-top: 1rem; }
+  .quelle a { color: var(--navy-800); }
 </style>
 </head>
 <body>
   <header>
     <h1>Bundestag-Kompakt</h1>
-    <p>Kompakte Zusammenfassung dessen, was im Bundestag passiert</p>
+    <p>Was im Bundestag passiert – kompakt und in einfacher Sprache</p>
   </header>
-  <main>
-    <div class="placeholder">
-      <h2>Grundgerüst steht</h2>
-      <p>Hier erscheinen bald die Zusammenfassungen aus dem Bundestag – gruppiert nach Themen, mit Detailansicht pro Beschluss.</p>
-    </div>
+  <main id="app">
+    <div class="state-message">Lädt ...</div>
   </main>
+
+<script>
+function pillList(items, cls) {
+  if (!items || items.length === 0) return '<span class="no-vote">–</span>';
+  return items.map(p => `<span class="pill ${cls}">${p}</span>`).join("");
+}
+
+function renderVote(vote) {
+  if (!vote) return `<div class="no-vote">Noch keine Abstimmung / Beschlussempfehlung vorhanden.</div>`;
+  return `
+    <div class="vote-block">
+      <div class="vote-row"><span class="vote-label">Art:</span> ${vote.art}</div>
+      <div class="vote-row"><span class="vote-label">Dafür:</span> ${pillList(vote.dafuer, "fuer")}</div>
+      <div class="vote-row"><span class="vote-label">Dagegen:</span> ${pillList(vote.dagegen, "gegen")}</div>
+      <div class="vote-row"><span class="vote-label">Enthalten:</span> ${pillList(vote.enthalten, "enthalten")}</div>
+    </div>`;
+}
+
+function statusOf(entry) {
+  if (!entry.abstimmungsergebnis) return "offen";
+  return entry.abstimmungsergebnis.ausgang || "offen";
+}
+
+const STATUS_LABEL = {
+  angenommen: "✓ Angenommen",
+  abgelehnt: "✕ Abgelehnt",
+  offen: "○ Läuft noch",
+};
+
+function renderCard(entry) {
+  const status = statusOf(entry);
+  return `
+    <details class="card status-${status}">
+      <summary class="card-summary">
+        <h2>${entry.titel}</h2>
+        <span class="status-badge status-${status}">${STATUS_LABEL[status]}</span>
+        <span class="chevron">›</span>
+      </summary>
+      <div class="card-body">
+        <p>${entry.zusammenfassung}</p>
+        <div class="field-label">Abstimmungsergebnis</div>
+        ${renderVote(entry.abstimmungsergebnis)}
+        <div class="field-label">Eingebracht von</div>
+        <div class="meta-line">${entry.eingebrachtVon}</div>
+        <div class="field-label">Nächste Schritte</div>
+        <div class="meta-line">${entry.naechsteSchritte}</div>
+        <div class="quelle">Letzte Änderung: ${entry.letzteAenderung} · <a href="${entry.url}" target="_blank" rel="noopener">Quelle</a></div>
+      </div>
+    </details>`;
+}
+
+function render(entries) {
+  const app = document.getElementById("app");
+
+  if (!entries || entries.length === 0) {
+    app.innerHTML = `<div class="state-message">Aktuell keine Einträge. Der Bundestag tagt gerade nicht, oder die Datenerfassung läuft noch.</div>`;
+    return;
+  }
+
+  const groups = {};
+  for (const entry of entries) {
+    const key = entry.themenbereich || "Sonstiges";
+    (groups[key] ??= []).push(entry);
+  }
+
+  const sortedGroupNames = Object.keys(groups).sort((a, b) => a.localeCompare(b, "de"));
+
+  app.innerHTML = sortedGroupNames
+    .map((group) => `
+      <div class="group-title">${group}</div>
+      ${groups[group].map(renderCard).join("")}
+    `)
+    .join("");
+}
+
+fetch("data/index.json")
+  .then((res) => {
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    return res.json();
+  })
+  .then(render)
+  .catch((err) => {
+    document.getElementById("app").innerHTML =
+      `<div class="state-message">Daten konnten nicht geladen werden (${err.message}).</div>`;
+  });
+</script>
 </body>
 </html>
