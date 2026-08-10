@@ -7,43 +7,50 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon.svg">
-<meta name="theme-color" content="#0b1220">
+<meta name="theme-color" content="#eef4f6">
 <style>
   :root {
-    --bg: #0b1220;
-    --card: #141d30;
-    --card-hover: #182339;
-    --border: #24314a;
-    --ink: #e8ecf5;
-    --ink-dim: #8b98b3;
-    --ink-faint: #5c6a87;
-    --accent: #5b8def;
-    --accent-soft: rgba(91, 141, 239, 0.14);
+    --bg: #eef4f6;
+    --surface: #ffffff;
+    --border: #d3e2e7;
+    --ink: #16232b;
+    --ink-dim: #5e7480;
+    --ink-faint: #93aab5;
+    --accent: #1f6f8b;
+    --accent-soft: rgba(31, 111, 139, 0.12);
 
-    --green: #4ade80;
-    --green-bg: rgba(74, 222, 128, 0.14);
-    --red: #f87171;
-    --red-bg: rgba(248, 113, 113, 0.14);
-    --neutral: #8b98b3;
-    --neutral-bg: rgba(139, 152, 179, 0.14);
+    --green: #2f8f5b;
+    --green-bg: rgba(47, 143, 91, 0.12);
+    --red: #c24b3f;
+    --red-bg: rgba(194, 75, 63, 0.12);
+    --neutral: #93aab5;
+    --neutral-bg: rgba(147, 171, 181, 0.14);
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: var(--bg);
+    background: radial-gradient(ellipse 900px 500px at 50% -8%, #ffffff 0%, var(--bg) 65%) var(--bg);
+    background-attachment: fixed;
     color: var(--ink);
   }
   header {
-    padding: 1.75rem 1.5rem 1.25rem;
-    border-bottom: 1px solid var(--border);
+    padding: 2.25rem 1.5rem 1.5rem;
+    text-align: center;
   }
-  header h1 { margin: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: -0.01em; }
-  header p { margin: 0.3rem 0 0; color: var(--ink-dim); font-size: 0.875rem; }
+  header h1 { margin: 0; font-size: 1.6rem; font-weight: 300; letter-spacing: 0.01em; color: var(--ink); }
+  header p { margin: 0.35rem 0 0; color: var(--ink-dim); font-size: 0.875rem; }
+  header .dateline {
+    margin: 0.6rem 0 0;
+    font-family: ui-monospace, "SF Mono", Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+  }
   .filter-bar {
-    max-width: 720px;
+    max-width: 640px;
     margin: 0 auto;
-    padding: 0.75rem 1.5rem 0;
+    padding: 0.6rem 1.5rem 0;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -53,10 +60,10 @@
   .filter-bar select,
   .filter-bar input[type="search"] {
     font-size: 0.85rem;
-    padding: 0.4rem 0.7rem;
-    border-radius: 10px;
+    padding: 0.45rem 0.8rem;
+    border-radius: 999px;
     border: 1px solid var(--border);
-    background: var(--card);
+    background: var(--surface);
     color: var(--ink);
   }
   .filter-bar select:focus,
@@ -67,25 +74,26 @@
   }
   .filter-bar input[type="search"] { flex: 1; min-width: 0; }
   .stats-bar {
-    max-width: 720px;
+    max-width: 640px;
     margin: 0.9rem auto 0;
     padding: 0 1.5rem;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 0.5rem;
   }
   .stat-chip {
     font-size: 0.8rem;
     font-weight: 600;
-    padding: 0.3rem 0.75rem;
+    padding: 0.3rem 0.8rem;
     border-radius: 999px;
-    background: var(--card);
+    background: var(--surface);
     border: 1px solid var(--border);
     color: var(--ink-dim);
   }
   .stat-chip.stat-angenommen { color: var(--green); }
   .stat-chip.stat-abgelehnt { color: var(--red); }
-  main { max-width: 720px; margin: 0 auto; padding: 1.5rem; }
+  main { max-width: 640px; margin: 0 auto; padding: 1.75rem 1.5rem; }
   .state-message {
     text-align: center;
     color: var(--ink-dim);
@@ -95,87 +103,73 @@
     font-size: 0.78rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.09em;
     color: var(--ink-faint);
-    margin: 2.25rem 0 0.75rem;
+    text-align: center;
+    margin: 2.5rem 0 0.9rem;
   }
   .group-title:first-child { margin-top: 0; }
   .card {
-    position: relative;
-    background: var(--card);
+    background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 16px;
-    margin-bottom: 0.75rem;
+    border-radius: 18px;
+    margin-bottom: 0.7rem;
     overflow: hidden;
-    transition: background 0.15s ease;
+    box-shadow: 0 1px 3px rgba(22, 35, 43, 0.04);
   }
-  .card::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: var(--neutral);
-  }
-  .card.status-angenommen::before { background: var(--green); }
-  .card.status-abgelehnt::before { background: var(--red); }
-  .card-summary:hover { background: var(--card-hover); }
+  .card-summary:hover { background: #fbfdfd; }
   .card-summary {
-    padding: 1.1rem 1.1rem 1rem;
+    padding: 1.05rem 1.2rem;
     cursor: pointer;
     list-style: none;
     display: flex;
     align-items: flex-start;
-    gap: 0.75rem;
+    gap: 1rem;
   }
   .card-summary::-webkit-details-marker { display: none; }
+  .ring {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 999px;
+    border: 2px solid var(--ring-c, var(--neutral));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--ring-c, var(--neutral));
+    margin-top: 0.1rem;
+  }
+  .card.status-angenommen .ring { --ring-c: var(--green); }
+  .card.status-abgelehnt .ring { --ring-c: var(--red); }
+  .titlewrap { flex: 1 1 auto; min-width: 0; }
   .card-summary h2 {
-    flex: 1 1 auto;
-    min-width: 0;
-    margin: 0;
+    margin: 0 0 0.3rem;
     font-size: 1rem;
     font-weight: 600;
     color: var(--ink);
     line-height: 1.4;
   }
-  .summary-right {
-    flex: 0 0 auto;
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    margin-top: 0.1rem;
+  .card-meta {
+    font-family: ui-monospace, "SF Mono", Consolas, monospace;
+    font-size: 0.72rem;
+    color: var(--accent);
   }
-  .badge-stack { display: flex; flex-direction: column; align-items: center; gap: 0.3rem; }
-  .badge-date { font-size: 0.7rem; color: var(--ink-faint); }
-  .chevron { color: var(--ink-faint); flex-shrink: 0; transition: transform 0.15s ease; }
+  .chevron { color: var(--ink-faint); flex-shrink: 0; transition: transform 0.15s ease; margin-top: 0.35rem; }
   details[open] .chevron { transform: rotate(90deg); }
-  .status-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.3rem;
-    min-width: 7.5rem;
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 0.2rem 0.6rem;
-    border-radius: 999px;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-  .status-badge.status-angenommen { background: var(--green-bg); color: var(--green); }
-  .status-badge.status-abgelehnt { background: var(--red-bg); color: var(--red); }
-  .status-badge.status-offen { background: var(--neutral-bg); color: var(--ink-dim); }
   .card-body {
-    padding: 0 1.1rem 1.15rem;
+    padding: 0 1.2rem 1.2rem 3.5rem;
     border-top: 1px solid var(--border);
   }
-  .card-body p { line-height: 1.6; color: var(--ink); white-space: pre-line; margin: 1rem 0; }
+  .card-body p { line-height: 1.65; color: var(--ink); white-space: pre-line; margin: 1.1rem 0; }
   .field-label {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.07em;
     color: var(--ink-faint);
-    margin: 1.1rem 0 0.4rem;
+    margin: 1.15rem 0 0.4rem;
   }
   .vote-block { display: flex; flex-direction: column; gap: 0.4rem; }
   .vote-row { display: flex; gap: 0.5rem; align-items: baseline; font-size: 0.9rem; flex-wrap: wrap; }
@@ -186,8 +180,13 @@
   .pill.enthalten { background: var(--neutral-bg); color: var(--ink-dim); }
   .no-vote { color: var(--ink-dim); font-style: italic; font-size: 0.9rem; }
   .meta-line { font-size: 0.85rem; color: var(--ink-dim); margin: 0.2rem 0; }
-  .quelle { font-size: 0.8rem; margin-top: 1.1rem; color: var(--ink-faint); }
-  .quelle a { color: var(--accent); text-decoration: none; }
+  .quelle {
+    font-family: ui-monospace, "SF Mono", Consolas, monospace;
+    font-size: 0.75rem;
+    margin-top: 1.15rem;
+    color: var(--ink-faint);
+  }
+  .quelle a { color: var(--accent); text-decoration: none; font-family: -apple-system, "Segoe UI", sans-serif; }
   .quelle a:hover { text-decoration: underline; }
 </style>
 </head>
@@ -195,6 +194,7 @@
   <header>
     <h1>Bundestag-Kompakt</h1>
     <p>Was im Bundestag passiert – kompakt und in einfacher Sprache</p>
+    <p class="dateline" id="dateline"></p>
   </header>
   <div class="filter-bar" id="search-bar">
     <label for="search-input">Suche:</label>
@@ -237,25 +237,36 @@ function statusOf(entry) {
   return entry.abstimmungsergebnis.ausgang || "offen";
 }
 
-const STATUS_LABEL = {
-  angenommen: "✓ Angenommen",
-  abgelehnt: "✕ Abgelehnt",
-  offen: "○ Läuft noch",
-};
+const RING_SYMBOL = { angenommen: "✓", abgelehnt: "✕", offen: "…" };
+
+// ISO-8601-Kalenderwoche (montags beginnend, Woche mit erstem Donnerstag des Jahres = KW 1)
+function isoWeek(date) {
+  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  const dayNum = (d.getUTCDay() + 6) % 7;
+  d.setUTCDate(d.getUTCDate() - dayNum + 3);
+  const firstThursday = new Date(Date.UTC(d.getUTCFullYear(), 0, 4));
+  const firstDayNum = (firstThursday.getUTCDay() + 6) % 7;
+  firstThursday.setUTCDate(firstThursday.getUTCDate() - firstDayNum + 3);
+  return 1 + Math.round((d - firstThursday) / (7 * 24 * 3600 * 1000));
+}
+
+function dateWithWeek(entry) {
+  const date = parseGermanDate(entry.letzteAenderung);
+  if (!date) return esc(entry.letzteAenderung);
+  return `${esc(entry.letzteAenderung)} · KW ${isoWeek(date)}`;
+}
 
 function renderCard(entry) {
   const status = statusOf(entry);
   return `
     <details class="card status-${status}">
       <summary class="card-summary">
-        <h2>${esc(entry.titel)}</h2>
-        <span class="summary-right">
-          <span class="badge-stack">
-            <span class="status-badge status-${status}">${STATUS_LABEL[status]}</span>
-            <span class="badge-date">${esc(entry.letzteAenderung)}</span>
-          </span>
-          <span class="chevron">›</span>
+        <span class="ring">${RING_SYMBOL[status]}</span>
+        <span class="titlewrap">
+          <h2>${esc(entry.titel)}</h2>
+          <span class="card-meta">${dateWithWeek(entry)}</span>
         </span>
+        <span class="chevron">›</span>
       </summary>
       <div class="card-body">
         <p>${esc(entry.zusammenfassung)}</p>
@@ -265,7 +276,7 @@ function renderCard(entry) {
         <div class="meta-line">${esc(entry.eingebrachtVon)}</div>
         <div class="field-label">Nächste Schritte</div>
         <div class="meta-line">${esc(entry.naechsteSchritte)}</div>
-        <div class="quelle">Letzte Änderung: ${esc(entry.letzteAenderung)} · <a href="${esc(entry.url)}" target="_blank" rel="noopener">Quelle</a></div>
+        <div class="quelle">${dateWithWeek(entry)} · <a href="${esc(entry.url)}" target="_blank" rel="noopener">Quelle</a></div>
       </div>
     </details>`;
 }
@@ -388,6 +399,13 @@ function setupFilter(entries) {
 function setupSearch() {
   document.getElementById("search-input").addEventListener("input", applyFilters);
 }
+
+function renderDateline() {
+  const today = new Date();
+  const formatted = `${String(today.getDate()).padStart(2, "0")}.${String(today.getMonth() + 1).padStart(2, "0")}.${today.getFullYear()}`;
+  document.getElementById("dateline").textContent = `Stand: KW ${isoWeek(today)} · ${formatted}`;
+}
+renderDateline();
 
 fetch("data/index.json")
   .then((res) => {
