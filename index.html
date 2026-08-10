@@ -141,8 +141,8 @@
     color: var(--ring-c, var(--neutral));
     margin-top: 0.1rem;
   }
-  .card.status-angenommen .ring { --ring-c: var(--green); }
-  .card.status-abgelehnt .ring { --ring-c: var(--red); }
+  .ring.status-angenommen { --ring-c: var(--green); }
+  .ring.status-abgelehnt { --ring-c: var(--red); }
   .titlewrap { flex: 1 1 auto; min-width: 0; }
   .card-summary h2 {
     margin: 0 0 0.3rem;
@@ -188,6 +188,42 @@
   }
   .quelle a { color: var(--accent); text-decoration: none; font-family: -apple-system, "Segoe UI", sans-serif; }
   .quelle a:hover { text-decoration: underline; }
+
+  .digest { max-width: 640px; margin: 0 auto; padding: 1.75rem 1.5rem 0; }
+  .digest-panel {
+    background: linear-gradient(180deg, #ffffff, var(--bg));
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 1.4rem 1.5rem 0.5rem;
+  }
+  .digest-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--accent);
+    margin: 0 0 0.25rem;
+  }
+  .digest-sub { font-size: 0.8rem; color: var(--ink-dim); margin: 0 0 1rem; }
+  .digest-item {
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .digest-item:first-of-type { border-top: none; padding-top: 0; }
+  .digest-item .ring { width: 1.9rem; height: 1.9rem; font-size: 0.72rem; margin-top: 0.05rem; }
+  .digest-link {
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    display: block;
+  }
+  .digest-link:hover { color: var(--accent); }
+  .digest-why { font-size: 0.83rem; color: var(--ink-dim); margin-top: 0.3rem; }
 </style>
 </head>
 <body>
@@ -196,6 +232,7 @@
     <p>Was im Bundestag passiert – kompakt und in einfacher Sprache</p>
     <p class="dateline" id="dateline"></p>
   </header>
+  <div class="digest" id="digest"></div>
   <div class="filter-bar" id="search-bar">
     <label for="search-input">Suche:</label>
     <input type="search" id="search-input" placeholder="z.B. Kindergeld, Fluglärm ...">
@@ -258,10 +295,13 @@ function dateWithWeek(entry) {
 
 function renderCard(entry) {
   const status = statusOf(entry);
+  const warum = entry.warumRelevant
+    ? `<div class="field-label">Warum das für dich wichtig ist</div><p>${esc(entry.warumRelevant)}</p>`
+    : "";
   return `
-    <details class="card status-${status}">
+    <details class="card status-${status}" id="entry-${esc(entry.docid)}">
       <summary class="card-summary">
-        <span class="ring">${RING_SYMBOL[status]}</span>
+        <span class="ring status-${status}">${RING_SYMBOL[status]}</span>
         <span class="titlewrap">
           <h2>${esc(entry.titel)}</h2>
           <span class="card-meta">${dateWithWeek(entry)}</span>
@@ -270,6 +310,7 @@ function renderCard(entry) {
       </summary>
       <div class="card-body">
         <p>${esc(entry.zusammenfassung)}</p>
+        ${warum}
         <div class="field-label">Abstimmungsergebnis</div>
         ${renderVote(entry.abstimmungsergebnis)}
         <div class="field-label">Eingebracht von</div>
@@ -406,6 +447,47 @@ function renderDateline() {
   document.getElementById("dateline").textContent = `Stand: KW ${isoWeek(today)} · ${formatted}`;
 }
 renderDateline();
+
+function renderDigest(digest) {
+  const container = document.getElementById("digest");
+  if (!digest || !digest.top || digest.top.length === 0) {
+    container.innerHTML = "";
+    return;
+  }
+
+  const items = digest.top
+    .map((e) => `
+      <div class="digest-item">
+        <span class="ring status-${e.ausgang}">${RING_SYMBOL[e.ausgang] ?? RING_SYMBOL.offen}</span>
+        <div>
+          <a class="digest-link" href="#entry-${esc(e.docid)}" data-docid="${esc(e.docid)}">${esc(e.titel)}</a>
+          ${e.warumRelevant ? `<div class="digest-why">${esc(e.warumRelevant)}</div>` : ""}
+        </div>
+      </div>`)
+    .join("");
+
+  container.innerHTML = `
+    <div class="digest-panel">
+      <div class="digest-title">Wochenüberblick · KW ${digest.kw}</div>
+      <div class="digest-sub">Die ${digest.top.length} alltagsrelevantesten Entscheidungen dieser Sitzungswoche, von ${digest.anzahlVorgaengeGesamt} insgesamt.</div>
+      ${items}
+    </div>`;
+
+  container.querySelectorAll(".digest-link").forEach((link) => {
+    link.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      const target = document.getElementById(`entry-${link.dataset.docid}`);
+      if (!target) return;
+      target.open = true;
+      target.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  });
+}
+
+fetch("data/digest-woche-aktuell.json")
+  .then((res) => (res.ok ? res.json() : null))
+  .then(renderDigest)
+  .catch(() => renderDigest(null));
 
 fetch("data/index.json")
   .then((res) => {

@@ -7,11 +7,21 @@
   "abstimmungsergebnis": {
     "art": "Ausschuss-Empfehlung",
     "ausgang": "angenommen",
-    "dafuer": ["CDU/CSU", "SPD"],
-    "dagegen": ["Bündnis 90/Die Grünen", "Die Linke"],
-    "enthalten": ["AfD"]
+    "dafuer": [
+      "CDU/CSU",
+      "SPD"
+    ],
+    "dagegen": [
+      "Bündnis 90/Die Grünen",
+      "Die Linke"
+    ],
+    "enthalten": [
+      "AfD"
+    ]
   },
   "eingebrachtVon": "Bundesregierung (Bundesministerium für Finanzen)",
   "themenbereich": "Finanzen",
-  "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+  "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt.",
+  "alltagsrelevanz": 2,
+  "warumRelevant": "Wirkt indirekt: Eine bessere Finanzausstattung von Ländern und Kommunen kann sich langfristig auf lokale Angebote auswirken, aber es gibt keinen direkten Effekt auf dich persönlich."
 }

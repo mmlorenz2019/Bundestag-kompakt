@@ -7,11 +7,21 @@
   "abstimmungsergebnis": {
     "art": "Ausschuss-Empfehlung",
     "ausgang": "angenommen",
-    "dafuer": ["CDU/CSU", "AfD", "SPD"],
-    "dagegen": ["Die Linke"],
-    "enthalten": ["Bündnis 90/Die Grünen"]
+    "dafuer": [
+      "CDU/CSU",
+      "AfD",
+      "SPD"
+    ],
+    "dagegen": [
+      "Die Linke"
+    ],
+    "enthalten": [
+      "Bündnis 90/Die Grünen"
+    ]
   },
   "eingebrachtVon": "Bundesregierung (Bundesministerium des Innern)",
   "themenbereich": "Migration",
-  "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+  "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt.",
+  "alltagsrelevanz": 2,
+  "warumRelevant": "Betrifft dich vor allem, wenn du selbst oder Angehörige mit Aufenthaltstiteln bzw. Ausländerbehörden zu tun haben – für die meisten anderen ändert sich im Alltag nichts."
 }

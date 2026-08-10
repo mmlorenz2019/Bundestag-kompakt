@@ -7,11 +7,20 @@
   "abstimmungsergebnis": {
     "art": "Ausschuss-Empfehlung",
     "ausgang": "angenommen",
-    "dafuer": ["CDU/CSU", "SPD"],
-    "dagegen": ["AfD", "Bündnis 90/Die Grünen", "Die Linke"],
+    "dafuer": [
+      "CDU/CSU",
+      "SPD"
+    ],
+    "dagegen": [
+      "AfD",
+      "Bündnis 90/Die Grünen",
+      "Die Linke"
+    ],
     "enthalten": []
   },
   "eingebrachtVon": "Bundesregierung (Bundesministerium für Gesundheit)",
   "themenbereich": "Gesundheit",
-  "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+  "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt.",
+  "alltagsrelevanz": 5,
+  "warumRelevant": "Betrifft praktisch alle gesetzlich Krankenversicherten: Zuzahlungen (z.B. bei Zahnersatz) steigen moderat, dafür sollen die Beitragssätze stabil bleiben."
 }

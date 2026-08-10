@@ -2,8 +2,10 @@ name: Tägliches Update
 
 on:
   schedule:
-    # 05:00 UTC = 06:00/07:00 MEZ/MESZ, Montag bis Freitag (Bundestag tagt am Wochenende nicht)
-    - cron: "0 5 * * 1-5"
+    # 05:00 UTC = 06:00/07:00 MEZ/MESZ, Sonntag bis Freitag. Der Bundestag tagt am Wochenende
+    # nicht (der Lauf findet dann einfach "nichts Neues"), aber der Sonntag wird für den
+    # Wochenüberblick gebraucht (siehe Schritt weiter unten) - deshalb kein reines Mo-Fr.
+    - cron: "0 5 * * 0-5"
   workflow_dispatch: {}
 
 permissions:
@@ -47,6 +49,14 @@ jobs:
 
       - name: Index für die Webseite neu bauen
         run: node scripts/build-index.js
+
+      - name: Wochentag ermitteln
+        id: day
+        run: echo "is_sunday=$([ "$(date -u +%w)" = "0" ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+
+      - name: Wochenüberblick erzeugen (nur sonntags)
+        if: steps.day.outputs.is_sunday == 'true'
+        run: node scripts/build-digest.js
 
       - name: Commit & Push (falls es Änderungen gibt)
         run: |

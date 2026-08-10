@@ -7,11 +7,20 @@
   "abstimmungsergebnis": {
     "art": "Abstimmung im Plenum",
     "ausgang": "abgelehnt",
-    "dafuer": ["Bündnis 90/Die Grünen", "Die Linke"],
-    "dagegen": ["CDU/CSU", "AfD", "SPD"],
+    "dafuer": [
+      "Bündnis 90/Die Grünen",
+      "Die Linke"
+    ],
+    "dagegen": [
+      "CDU/CSU",
+      "AfD",
+      "SPD"
+    ],
     "enthalten": []
   },
   "eingebrachtVon": "Bündnis 90/Die Grünen (Fraktion)",
   "themenbereich": "Verkehr",
-  "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)"
+  "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)",
+  "alltagsrelevanz": 4,
+  "warumRelevant": "Betrifft dich direkt, wenn du Auto fährst: Es bleibt vorerst kein generelles Tempolimit auf deutschen Autobahnen."
 }

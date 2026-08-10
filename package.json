@@ -6,7 +6,8 @@
   "scripts": {
     "scrape": "node scripts/scrape.js",
     "summarize": "node scripts/summarize.js",
-    "build-index": "node scripts/build-index.js"
+    "build-index": "node scripts/build-index.js",
+    "build-digest": "node scripts/build-digest.js"
   },
   "repository": {
     "type": "git",

@@ -7,11 +7,20 @@
   "abstimmungsergebnis": {
     "art": "Ausschuss-Empfehlung",
     "ausgang": "angenommen",
-    "dafuer": ["CDU/CSU", "SPD"],
-    "dagegen": ["AfD", "Bündnis 90/Die Grünen", "Die Linke"],
+    "dafuer": [
+      "CDU/CSU",
+      "SPD"
+    ],
+    "dagegen": [
+      "AfD",
+      "Bündnis 90/Die Grünen",
+      "Die Linke"
+    ],
     "enthalten": []
   },
   "eingebrachtVon": "Bundesregierung (Bundesministerium für Wirtschaft und Energie)",
   "themenbereich": "Energie",
-  "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+  "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt.",
+  "alltagsrelevanz": 3,
+  "warumRelevant": "Wirkt sich langfristig auf Stromversorgung und -preise aus (neuer Kapazitätsmarkt für Kraftwerke), aber keine unmittelbare Änderung, die du sofort merkst."
 }

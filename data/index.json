@@ -8,7 +8,9 @@
     "abstimmungsergebnis": null,
     "eingebrachtVon": "Bundesregierung (Bundesministerium für Digitales und Staatsmodernisierung)",
     "themenbereich": "Digitales",
-    "naechsteSchritte": "Der Entwurf ist am 29.07.2026 im Bundestag eingegangen, eine Beratung hat dort noch nicht begonnen. Der Bundesrat hat bereits im ersten Durchgang (10.07.2026) Stellung genommen. Da es sich um ein Zustimmungsgesetz handelt, muss der Bundesrat dem Gesetz am Ende zustimmen."
+    "naechsteSchritte": "Der Entwurf ist am 29.07.2026 im Bundestag eingegangen, eine Beratung hat dort noch nicht begonnen. Der Bundesrat hat bereits im ersten Durchgang (10.07.2026) Stellung genommen. Da es sich um ein Zustimmungsgesetz handelt, muss der Bundesrat dem Gesetz am Ende zustimmen.",
+    "alltagsrelevanz": 4,
+    "warumRelevant": "Betrifft potenziell jede:n: eine freiwillige digitale Ausweis-App fürs Smartphone, mit der du dich online ausweisen und Dokumente vorzeigen kannst, sobald sie verfügbar ist."
   },
   {
     "docid": "1234",
@@ -19,7 +21,9 @@
     "abstimmungsergebnis": null,
     "eingebrachtVon": "Bundesregierung (Bundesministerium für Ernährung und Landwirtschaft)",
     "themenbereich": "Landwirtschaft/Umwelt",
-    "naechsteSchritte": "Der Entwurf ist im Bundestag eingegangen, wurde dort aber noch nicht beraten. Der Bundesrat hat bereits im ersten Durchgang Stellung genommen. Da es sich um ein Zustimmungsgesetz handelt, muss der Bundesrat dem Gesetz nach der Bundestagsberatung noch zustimmen."
+    "naechsteSchritte": "Der Entwurf ist im Bundestag eingegangen, wurde dort aber noch nicht beraten. Der Bundesrat hat bereits im ersten Durchgang Stellung genommen. Da es sich um ein Zustimmungsgesetz handelt, muss der Bundesrat dem Gesetz nach der Bundestagsberatung noch zustimmen.",
+    "alltagsrelevanz": 2,
+    "warumRelevant": "Betrifft dich direkt vor allem, wenn du selbst landwirtschaftlich tätig bist; für Verbraucher:innen ist die Wirkung kaum spürbar."
   },
   {
     "docid": "1197",
@@ -30,7 +34,9 @@
     "abstimmungsergebnis": null,
     "eingebrachtVon": "Bundesregierung (Bundesministerium für Verkehr)",
     "themenbereich": "Verkehr",
-    "naechsteSchritte": "Der Entwurf ist am 29.07.2026 im Bundestag eingegangen, wurde dort aber noch nicht beraten. Der Bundesrat hat bereits im ersten Durchgang eine Stellungnahme abgegeben. Es steht noch die erste Lesung im Bundestag aus."
+    "naechsteSchritte": "Der Entwurf ist am 29.07.2026 im Bundestag eingegangen, wurde dort aber noch nicht beraten. Der Bundesrat hat bereits im ersten Durchgang eine Stellungnahme abgegeben. Es steht noch die erste Lesung im Bundestag aus.",
+    "alltagsrelevanz": 2,
+    "warumRelevant": "Betrifft dich vor allem, wenn du in der Nähe eines Flughafens wohnst – für alle anderen kaum spürbar."
   },
   {
     "docid": "1209",
@@ -55,7 +61,9 @@
     },
     "eingebrachtVon": "Bundesregierung (Bundesministerium für Finanzen)",
     "themenbereich": "Finanzen",
-    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt.",
+    "alltagsrelevanz": 2,
+    "warumRelevant": "Wirkt indirekt: Eine bessere Finanzausstattung von Ländern und Kommunen kann sich langfristig auf lokale Angebote auswirken, aber es gibt keinen direkten Effekt auf dich persönlich."
   },
   {
     "docid": "1220",
@@ -79,7 +87,9 @@
     },
     "eingebrachtVon": "Bundesregierung (Bundesministerium für Gesundheit)",
     "themenbereich": "Gesundheit",
-    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt.",
+    "alltagsrelevanz": 5,
+    "warumRelevant": "Betrifft praktisch alle gesetzlich Krankenversicherten: Zuzahlungen (z.B. bei Zahnersatz) steigen moderat, dafür sollen die Beitragssätze stabil bleiben."
   },
   {
     "docid": "1127",
@@ -104,7 +114,9 @@
     },
     "eingebrachtVon": "Bundesregierung (Bundesministerium des Innern)",
     "themenbereich": "Migration",
-    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt.",
+    "alltagsrelevanz": 2,
+    "warumRelevant": "Betrifft dich vor allem, wenn du selbst oder Angehörige mit Aufenthaltstiteln bzw. Ausländerbehörden zu tun haben – für die meisten anderen ändert sich im Alltag nichts."
   },
   {
     "docid": "1158",
@@ -128,7 +140,9 @@
     },
     "eingebrachtVon": "Bundesregierung (Bundesministerium für Wirtschaft und Energie)",
     "themenbereich": "Energie",
-    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt.",
+    "alltagsrelevanz": 5,
+    "warumRelevant": "Betrifft dich direkt, wenn du eine Heizung ersetzen musst oder ein Haus besitzt: Die 65-Prozent-Ökoheizungspflicht entfällt, du hast wieder mehr Wahlfreiheit beim Heizungstyp."
   },
   {
     "docid": "1191",
@@ -152,7 +166,9 @@
     },
     "eingebrachtVon": "Bundesregierung (Bundesministerium für Wirtschaft und Energie)",
     "themenbereich": "Wirtschaft",
-    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt.",
+    "alltagsrelevanz": 1,
+    "warumRelevant": "Sehr technisches EU-Anpassungsgesetz zu Notfallverfahren bei Elektrogeräten – betrifft im Alltag praktisch niemanden direkt."
   },
   {
     "docid": "1282",
@@ -175,7 +191,9 @@
     },
     "eingebrachtVon": "Regierungsfraktionen (CDU/CSU, SPD)",
     "themenbereich": "Staat / Parlament",
-    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt.",
+    "alltagsrelevanz": 1,
+    "warumRelevant": "Betrifft dich nicht direkt finanziell – reguläre Diätenerhöhung für Abgeordnete fällt 2026 aus, das ist vor allem ein politisches Signal."
   },
   {
     "docid": "1225",
@@ -199,7 +217,9 @@
     },
     "eingebrachtVon": "Bundesregierung (Bundesministerium für Wirtschaft und Energie)",
     "themenbereich": "Energie",
-    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+    "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt.",
+    "alltagsrelevanz": 3,
+    "warumRelevant": "Wirkt sich langfristig auf Stromversorgung und -preise aus (neuer Kapazitätsmarkt für Kraftwerke), aber keine unmittelbare Änderung, die du sofort merkst."
   },
   {
     "docid": "1229",
@@ -216,7 +236,9 @@
     },
     "eingebrachtVon": "AfD-Fraktion",
     "themenbereich": "Staat / Parlament",
-    "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)"
+    "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)",
+    "alltagsrelevanz": 1,
+    "warumRelevant": "Rein politisch-symbolisches Vorhaben (freiwilliger Bezüge-Verzicht für Regierungsmitglieder) ohne direkte Auswirkung auf dich."
   },
   {
     "docid": "1152",
@@ -240,7 +262,9 @@
     },
     "eingebrachtVon": "Bundesregierung (Bundesministerium für Finanzen)",
     "themenbereich": "Soziales / Familie",
-    "naechsteSchritte": "Muss noch durch den Bundesrat (dort bereits einmal beraten, Status \"Beraten\", noch nicht final abgestimmt)"
+    "naechsteSchritte": "Muss noch durch den Bundesrat (dort bereits einmal beraten, Status \"Beraten\", noch nicht final abgestimmt)",
+    "alltagsrelevanz": 5,
+    "warumRelevant": "Betrifft dich direkt, wenn du (künftig) Kindergeld beziehst: weniger Papierkram nach der Geburt, die Familienkasse zahlt automatisch aus."
   },
   {
     "docid": "1214",
@@ -264,7 +288,9 @@
     },
     "eingebrachtVon": "Bündnis 90/Die Grünen (Fraktion)",
     "themenbereich": "Verkehr",
-    "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)"
+    "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)",
+    "alltagsrelevanz": 4,
+    "warumRelevant": "Betrifft dich direkt, wenn du Auto fährst: Es bleibt vorerst kein generelles Tempolimit auf deutschen Autobahnen."
   },
   {
     "docid": "1255",
@@ -288,6 +314,8 @@
     },
     "eingebrachtVon": "AfD-Fraktion",
     "themenbereich": "Soziales / Familie",
-    "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)"
+    "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)",
+    "alltagsrelevanz": 2,
+    "warumRelevant": "Betrifft dich nur, falls dein Kindergeld-Anspruch ein im EU-Ausland lebendes Kind einschließt – für die meisten Familien ändert sich nichts."
   }
 ]

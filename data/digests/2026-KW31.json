@@ -1,0 +1,58 @@
+{
+  "isoYear": 2026,
+  "kw": 31,
+  "erzeugtAm": "2026-08-10T23:13:14.595Z",
+  "anzahlVorgaengeGesamt": 7,
+  "top": [
+    {
+      "docid": "1158",
+      "titel": "Heizungsgesetz gelockert: Zwang zu 65 Prozent Ökoheizung fällt weg",
+      "themenbereich": "Energie",
+      "alltagsrelevanz": 5,
+      "warumRelevant": "Betrifft dich direkt, wenn du eine Heizung ersetzen musst oder ein Haus besitzt: Die 65-Prozent-Ökoheizungspflicht entfällt, du hast wieder mehr Wahlfreiheit beim Heizungstyp.",
+      "ausgang": "angenommen",
+      "letzteAenderung": "28.07.2026",
+      "url": "https://bundestagszusammenfasser.de/details?docid=1158"
+    },
+    {
+      "docid": "1220",
+      "titel": "Krankenkassen-Beiträge sollen stabil bleiben: Sparpaket im Gesundheitswesen beschlossen",
+      "themenbereich": "Gesundheit",
+      "alltagsrelevanz": 5,
+      "warumRelevant": "Betrifft praktisch alle gesetzlich Krankenversicherten: Zuzahlungen (z.B. bei Zahnersatz) steigen moderat, dafür sollen die Beitragssätze stabil bleiben.",
+      "ausgang": "angenommen",
+      "letzteAenderung": "29.07.2026",
+      "url": "https://bundestagszusammenfasser.de/details?docid=1220"
+    },
+    {
+      "docid": "1192",
+      "titel": "Digitale Ausweis-App für alle: Deutschland führt die EU-Wallet für digitale Identitäten ein",
+      "themenbereich": "Digitales",
+      "alltagsrelevanz": 4,
+      "warumRelevant": "Betrifft potenziell jede:n: eine freiwillige digitale Ausweis-App fürs Smartphone, mit der du dich online ausweisen und Dokumente vorzeigen kannst, sobald sie verfügbar ist.",
+      "ausgang": "offen",
+      "letzteAenderung": "30.07.2026",
+      "url": "https://bundestagszusammenfasser.de/details?docid=1192"
+    },
+    {
+      "docid": "1127",
+      "titel": "Migrationsämter werden digitaler: Biometrische Daten künftig zentral gespeichert",
+      "themenbereich": "Migration",
+      "alltagsrelevanz": 2,
+      "warumRelevant": "Betrifft dich vor allem, wenn du selbst oder Angehörige mit Aufenthaltstiteln bzw. Ausländerbehörden zu tun haben – für die meisten anderen ändert sich im Alltag nichts.",
+      "ausgang": "angenommen",
+      "letzteAenderung": "28.07.2026",
+      "url": "https://bundestagszusammenfasser.de/details?docid=1127"
+    },
+    {
+      "docid": "1197",
+      "titel": "Mehr Schutz vor Fluglärm: Neue Regeln für Flughäfen und Fluggesellschaften",
+      "themenbereich": "Verkehr",
+      "alltagsrelevanz": 2,
+      "warumRelevant": "Betrifft dich vor allem, wenn du in der Nähe eines Flughafens wohnst – für alle anderen kaum spürbar.",
+      "ausgang": "offen",
+      "letzteAenderung": "29.07.2026",
+      "url": "https://bundestagszusammenfasser.de/details?docid=1197"
+    }
+  ]
+}

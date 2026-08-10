@@ -7,11 +7,20 @@
   "abstimmungsergebnis": {
     "art": "Ausschuss-Empfehlung",
     "ausgang": "angenommen",
-    "dafuer": ["CDU/CSU", "AfD", "SPD", "Bündnis 90/Die Grünen"],
+    "dafuer": [
+      "CDU/CSU",
+      "AfD",
+      "SPD",
+      "Bündnis 90/Die Grünen"
+    ],
     "dagegen": [],
-    "enthalten": ["Die Linke"]
+    "enthalten": [
+      "Die Linke"
+    ]
   },
   "eingebrachtVon": "Bundesregierung (Bundesministerium für Wirtschaft und Energie)",
   "themenbereich": "Wirtschaft",
-  "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+  "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt.",
+  "alltagsrelevanz": 1,
+  "warumRelevant": "Sehr technisches EU-Anpassungsgesetz zu Notfallverfahren bei Elektrogeräten – betrifft im Alltag praktisch niemanden direkt."
 }

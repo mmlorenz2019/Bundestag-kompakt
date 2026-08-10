@@ -7,11 +7,19 @@
   "abstimmungsergebnis": {
     "art": "Ausschuss-Empfehlung (einstimmig)",
     "ausgang": "angenommen",
-    "dafuer": ["CDU/CSU", "SPD", "AfD", "Bündnis 90/Die Grünen", "Die Linke"],
+    "dafuer": [
+      "CDU/CSU",
+      "SPD",
+      "AfD",
+      "Bündnis 90/Die Grünen",
+      "Die Linke"
+    ],
     "dagegen": [],
     "enthalten": []
   },
   "eingebrachtVon": "Regierungsfraktionen (CDU/CSU, SPD)",
   "themenbereich": "Staat / Parlament",
-  "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt."
+  "naechsteSchritte": "Verfahren abgeschlossen – Gesetz wurde im Bundesgesetzblatt verkündet, der Bundesrat hat zugestimmt.",
+  "alltagsrelevanz": 1,
+  "warumRelevant": "Betrifft dich nicht direkt finanziell – reguläre Diätenerhöhung für Abgeordnete fällt 2026 aus, das ist vor allem ein politisches Signal."
 }

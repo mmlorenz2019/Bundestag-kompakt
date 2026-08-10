@@ -7,11 +7,20 @@
   "abstimmungsergebnis": {
     "art": "Ausschuss-Empfehlung (Handzeichen, keine namentliche Abstimmung)",
     "ausgang": "angenommen",
-    "dafuer": ["CDU/CSU", "SPD", "Bündnis 90/Die Grünen"],
+    "dafuer": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen"
+    ],
     "dagegen": [],
-    "enthalten": ["AfD", "Die Linke"]
+    "enthalten": [
+      "AfD",
+      "Die Linke"
+    ]
   },
   "eingebrachtVon": "Bundesregierung (Bundesministerium für Finanzen)",
   "themenbereich": "Soziales / Familie",
-  "naechsteSchritte": "Muss noch durch den Bundesrat (dort bereits einmal beraten, Status \"Beraten\", noch nicht final abgestimmt)"
+  "naechsteSchritte": "Muss noch durch den Bundesrat (dort bereits einmal beraten, Status \"Beraten\", noch nicht final abgestimmt)",
+  "alltagsrelevanz": 5,
+  "warumRelevant": "Betrifft dich direkt, wenn du (künftig) Kindergeld beziehst: weniger Papierkram nach der Geburt, die Familienkasse zahlt automatisch aus."
 }

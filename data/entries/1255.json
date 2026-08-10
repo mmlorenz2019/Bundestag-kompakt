@@ -7,11 +7,20 @@
   "abstimmungsergebnis": {
     "art": "Ausschuss-Empfehlung",
     "ausgang": "abgelehnt",
-    "dafuer": ["AfD"],
-    "dagegen": ["CDU/CSU", "SPD", "Bündnis 90/Die Grünen", "Die Linke"],
+    "dafuer": [
+      "AfD"
+    ],
+    "dagegen": [
+      "CDU/CSU",
+      "SPD",
+      "Bündnis 90/Die Grünen",
+      "Die Linke"
+    ],
     "enthalten": []
   },
   "eingebrachtVon": "AfD-Fraktion",
   "themenbereich": "Soziales / Familie",
-  "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)"
+  "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)",
+  "alltagsrelevanz": 2,
+  "warumRelevant": "Betrifft dich nur, falls dein Kindergeld-Anspruch ein im EU-Ausland lebendes Kind einschließt – für die meisten Familien ändert sich nichts."
 }

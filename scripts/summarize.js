@@ -25,7 +25,12 @@ Gib AUSSCHLIESSLICH ein JSON-Objekt zurück (keine Erklärungen drumherum) mit e
   } | null,                      // null wenn noch keine Beschlussempfehlung/Abstimmung vorliegt (laufendes Verfahren)
   "eingebrachtVon": string,      // z.B. "Bundesregierung (Bundesministerium für X)" oder Fraktionsname
   "themenbereich": string,       // z.B. Gesundheit, Wirtschaft, Umwelt, Soziales, Verkehr, Justiz ...
-  "naechsteSchritte": string     // z.B. "Muss noch durch den Bundesrat" / "Erste Lesung im Bundestag steht noch aus"
+  "naechsteSchritte": string,    // z.B. "Muss noch durch den Bundesrat" / "Erste Lesung im Bundestag steht noch aus"
+  "alltagsrelevanz": number,     // 1-5, wie stark betrifft das normale Bürger:innen im Alltag direkt?
+                                  // 1 = betrifft praktisch niemanden direkt (z.B. sehr technische EU-Anpassung, reine Verwaltungsdetails)
+                                  // 3 = betrifft eine klar abgrenzbare Gruppe direkt (z.B. Autofahrer:innen, Landwirt:innen, Anwohner:innen)
+                                  // 5 = betrifft einen großen Teil der Bevölkerung direkt und spürbar (z.B. alle gesetzlich Krankenversicherten, alle Familien mit Kindergeld)
+  "warumRelevant": string        // 1-2 Sätze, konkret: FÜR WEN und WIE ändert sich etwas im echten Leben. Keine Wiederholung der Zusammenfassung.
 }
 
 Nutze ausschließlich Informationen aus den bereitgestellten Rohdaten. Erfinde nichts.`;
