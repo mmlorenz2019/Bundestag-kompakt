@@ -904,6 +904,11 @@
     "title": "Gesetz zur Änderung des Strafgesetzbuchs - Straffreiheit für Fahren ohne Fahrschein",
     "seededOnly": true
   },
+  "1060": {
+    "listDate": "12.08.2026",
+    "letzteAenderung": "12.08.2026",
+    "title": "Gesetz zur Neuregelung des Rechts der internationalen Rechtshilfe in Strafsachen"
+  },
   "1061": {
     "listDate": "25.03.2026",
     "title": "Neuordnung aufsichtsrechtlicher Verfahren der rechtsberatenden Berufe u.a.",
@@ -1129,6 +1134,11 @@
     "title": "Änderung des Behindertengleichstellungsgesetzes",
     "seededOnly": true
   },
+  "1111": {
+    "listDate": "12.08.2026",
+    "letzteAenderung": "12.08.2026",
+    "title": "Änderung des Strafgesetzbuches (Schutz vor K.-O.-Tropfen)"
+  },
   "1112": {
     "listDate": "12.06.2026",
     "title": "Stärkung der Rechte von Verletzten auf psychosoziale Prozessbegleitung",
@@ -1328,6 +1338,11 @@
     "listDate": "25.06.2026",
     "title": "Gesetz zur Stärkung der Cybersicherheit",
     "seededOnly": true
+  },
+  "1172": {
+    "listDate": "12.08.2026",
+    "letzteAenderung": "12.08.2026",
+    "title": "Änderung der Regelung über ärztliche Zwangsmaßnahmen im Betreuungsrecht u.a."
   },
   "1175": {
     "listDate": "08.07.2026",
@@ -1743,5 +1758,10 @@
     "listDate": "29.07.2026",
     "title": "Gesetz zur Einschränkung des Handels mit Gegenständen von Opfern aus der Zeit des Nationalsozialismus",
     "seededOnly": true
+  },
+  "1361": {
+    "listDate": "12.08.2026",
+    "letzteAenderung": "12.08.2026",
+    "title": "... Gesetz zur Änderung des Waffengesetzes - Ausgestaltung des unerlaubten Umgangs mit halbautomatischen Kurzwaffen zum Verschießen von Patronenmunition als Verbrechen"
   }
 }
