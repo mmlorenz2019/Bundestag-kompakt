@@ -1,0 +1,99 @@
+{
+  "docid": "1222",
+  "url": "https://bundestagszusammenfasser.de/details?docid=1222",
+  "scrapedAt": "2026-08-16T05:58:46.401Z",
+  "title": "Haushalt 2027",
+  "statusImageAlt": "keine Grafik",
+  "sections": {
+    "Basics": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Offizieller Titel": "Gesetz über die Feststellung des Bundeshaushaltsplans für das Haushaltsjahr 2027 (Haushaltsgesetz 2027 - HG 2027)",
+            "Initiator": {
+              "text": "Bundesministerium für Finanzen",
+              "href": "https://bundestagszusammenfasser.de/bmdetails?bmid=6"
+            },
+            "Status": "Im Bundestag eingegangen (1. Beratung geplant für kommende Sitzungswoche)",
+            "Letzte Änderung": "14.08.2026",
+            "Entwurf PDF": {
+              "text": "Download Entwurf",
+              "href": "https://bundestagszusammenfasser.de/wp-content/uploads/rewp21/1222_haushalt_2027.pdf"
+            },
+            "Drucksache": {
+              "text": "21/7300 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/073/2107300.pdf"
+            },
+            "Gesetztyp": "Zustimmungsgesetz",
+            "Exekutiver Fußabdruck": "✅ Vorhanden.",
+            "Verbändebeteiligung": "Kein Zeitraum angegeben."
+          }
+        }
+      ],
+      "text": null
+    },
+    "Zusammenfassung": {
+      "tables": [],
+      "text": "Diese Zusammenfassung wurde mit GPT4 erstellt und kann Fehler enthalten.Basisinformationen:\nDer Gesetzentwurf betrifft das Haushaltsgesetz 2027, das den Bundeshaushaltsplan für das Jahr 2027 feststellt. Die Notwendigkeit ergibt sich aus der Bundeshaushaltsordnung, die für jedes Haushaltsjahr einen Haushaltsplan vorschreibt. Der Entwurf orientiert sich an den Vorjahren, berücksichtigt aber aktuelle Entwicklungen, wie die Erhöhung des Rahmens für bestimmte Kredite um 2 Mrd. Euro und die Anpassung von Wertgrenzen. Federführend zuständig ist das Bundesministerium der Finanzen.\nHintergrund:\nDer Gesetzentwurf wird routinemäßig jährlich vorgelegt, wie es die Bundeshaushaltsordnung verlangt. Ein konkreter Auslöser außer der gesetzlichen Pflicht wird nicht genannt. Es werden keine wesentlichen Beiträge von Interessenvertretern oder Dritten erwähnt.\nKosten:\nFür den Bundeshaushalt entstehen Ausgaben und eine Nettokreditaufnahme in Höhe von 118.727 Millionen Euro ist vorgesehen. Die zulässige Nettokreditaufnahme nach der Schuldenregel beträgt 33.366 Millionen Euro, erhöht sich aber durch eine Bereichsausnahme (insbesondere für Verteidigung und Zivilschutz) auf 85.361 Millionen Euro. Einnahmen werden nicht explizit genannt, sondern es handelt sich um die Ermächtigung zur Kreditaufnahme. Für Bürger, Wirtschaft und Verwaltung entsteht kein zusätzlicher Erfüllungsaufwand oder sonstige Kosten. Auswirkungen auf Einzelpreise oder das Preisniveau sind nicht zu erwarten.\nInkrafttreten:\nKeine Angaben zum genauen Inkrafttreten. Es ist davon auszugehen, dass das Gesetz am Tag nach der Verkündung in Kraft tritt.\nSonstiges:\nDas Gesetz ist auf das Haushaltsjahr 2027 befristet und wird nicht evaluiert, da dies im Haushaltsrecht üblich ist. Es ist mit EU-Recht und völkerrechtlichen Verträgen vereinbar. Der Entwurf betont die Bedeutung für die Nachhaltigkeitsstrategie der Bundesregierung und die Einhaltung der Schuldenregel. Eine besondere Eilbedürftigkeit wird nicht erwähnt. Geschlechtergerechtigkeit wird geprüft, aber keine spezifischen Auswirkungen festgestellt.\nMaßnahmen:"
+    },
+    "Informationen aus dem Ministerium": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Datum Referentenentwurf": "06.07.2026",
+            "Datum Kabinettsbeschluss": "06.07.2026",
+            "Weiterführende Informationen": {
+              "text": "Vorhabenseite des Ministeriums",
+              "href": "https://www.bundesfinanzministerium.de/Web/DE/Themen/Oeffentliche_Finanzen/Bundeshaushalt/Bundeshaushalt-2027/bundeshaushalt-2027.html"
+            }
+          }
+        }
+      ],
+      "text": null
+    },
+    "Exekutiver Fußabdruck": {
+      "tables": [],
+      "text": "Exekutiver Fußabdruck laut Bundesministerium für Finanzen:„Wesentliche Beiträge von Interessenvertreterinnen, Interessenvertretern oder beauftragten Dritten zum Inhalt des Gesetzentwurfs liegen nicht vor.“"
+    },
+    "Beratungsverlauf im Bundestag": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Eingang im Bundestag": "14.08.2026",
+            "Drucksache": {
+              "text": "21/7300 (PDF-Download)",
+              "href": "https://dserver.bundestag.de/btd/21/073/2107300.pdf"
+            }
+          }
+        }
+      ],
+      "text": null
+    },
+    "Beratungsverlauf im Bundesrat": {
+      "tables": [
+        {
+          "type": "kv",
+          "entries": {
+            "Gesetztyp": "Zustimmungsgesetz",
+            "Drucksache im BR": "450/26",
+            "Eingang im Bundesrat": "14.08.2026"
+          }
+        }
+      ],
+      "text": null
+    },
+    "Weiterführende Links": {
+      "tables": [],
+      "text": "Vorhabenseite des Ministeriums\nVorgangseite auf bundestag.de"
+    }
+  },
+  "listRowCells": [
+    "In den letzten 7 Tagen aktualisiert",
+    "14.08.2026",
+    "Haushalt 2027",
+    "BMFBundesministerium für Finanzen"
+  ]
+}
