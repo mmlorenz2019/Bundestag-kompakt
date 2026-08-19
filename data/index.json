@@ -382,5 +382,44 @@
     "naechsteSchritte": "Vorgang abgeschlossen (abgelehnt)",
     "alltagsrelevanz": 2,
     "warumRelevant": "Betrifft dich nur, falls dein Kindergeld-Anspruch ein im EU-Ausland lebendes Kind einschließt – für die meisten Familien ändert sich nichts."
+  },
+  {
+    "docid": "1362",
+    "url": "https://bundestagszusammenfasser.de/details?docid=1362",
+    "letzteAenderung": null,
+    "titel": "Widerspruchslösung bei Organspende: Jede:r automatisch Spender:in, außer man widerspricht",
+    "zusammenfassung": "Es geht um eine Änderung des Transplantationsgesetzes: Statt wie bisher aktiv zustimmen zu müssen (Zustimmungslösung), sollen künftig alle Bürger:innen automatisch als Organspender:in gelten, wenn sie zu Lebzeiten nicht ausdrücklich widersprochen haben (Widerspruchsregelung). Ziel ist es, die Zahl der verfügbaren Spenderorgane zu erhöhen und Wartelisten zu verkürzen. Der Vorschlag stammt nicht von einer einzelnen Fraktion, sondern von einer fraktionsübergreifenden Bundestagsgruppe – ein Vorgehen, das bei ethisch besonders sensiblen Themen wie diesem üblich ist, da hier Abgeordnete oft ohne Fraktionszwang abstimmen. Kritiker:innen befürchten einen Eingriff in das Selbstbestimmungsrecht, Befürworter:innen verweisen auf die Chance, mehr Leben zu retten.",
+    "abstimmungsergebnis": null,
+    "eingebrachtVon": "Fraktionsübergreifende Bundestagsgruppe",
+    "themenbereich": "Gesundheit",
+    "naechsteSchritte": "Der Vorgang befindet sich noch im parlamentarischen Verfahren; eine Beschlussempfehlung oder Abstimmung im Plenum liegt laut den vorliegenden Daten noch nicht vor.",
+    "alltagsrelevanz": 4,
+    "warumRelevant": "Betrifft potenziell alle Bürger:innen, da man ohne aktiven Widerspruch automatisch zum Organspender würde – wer das nicht möchte, müsste künftig selbst aktiv widersprechen."
+  },
+  {
+    "docid": "1363",
+    "url": "https://bundestagszusammenfasser.de/details?docid=1363",
+    "letzteAenderung": null,
+    "titel": "Gesetzentwurf zur Neuregelung des Fernverkehrs mit der Bahn",
+    "zusammenfassung": "Die Fraktion Bündnis 90/Die Grünen hat einen Gesetzentwurf eingebracht, der das Angebot im Schienenpersonenfernverkehr (also Fernzüge wie ICE/IC) neu regeln soll. Zusätzlich sollen weitere Gesetze geändert werden. Aus den vorliegenden Daten geht nicht hervor, welche konkreten inhaltlichen Änderungen vorgesehen sind oder wie der aktuelle Beratungsstand ist.",
+    "abstimmungsergebnis": null,
+    "eingebrachtVon": "Fraktion Bündnis 90/Die Grünen",
+    "themenbereich": "Verkehr",
+    "naechsteSchritte": "Weitere parlamentarische Beratung steht aus, Details zum Verfahrensstand liegen nicht vor.",
+    "alltagsrelevanz": 3,
+    "warumRelevant": "Betrifft potenziell alle Bahnreisenden im Fernverkehr, da sich Angebot, Taktung oder Streckenversorgung durch Fernzüge ändern könnte."
+  },
+  {
+    "docid": "984",
+    "url": "https://bundestagszusammenfasser.de/details?docid=984",
+    "letzteAenderung": null,
+    "titel": "Reform des Bundespolizeigesetzes",
+    "zusammenfassung": "Die Bundesregierung will das Bundespolizeigesetz modernisieren. Aus den vorliegenden Angaben geht nicht im Detail hervor, welche konkreten Änderungen der Gesetzentwurf im Einzelnen vorsieht. Es hat bereits eine Anhörung von Sachverständigen im Bundestag stattgefunden, und es liegt inzwischen eine Beschlussempfehlung des zuständigen Ausschusses vor.",
+    "abstimmungsergebnis": null,
+    "eingebrachtVon": "Bundesregierung (Bundesministerium des Inneren)",
+    "themenbereich": "Innere Sicherheit",
+    "naechsteSchritte": "Der Gesetzentwurf steht mit vorliegender Beschlussempfehlung vor der abschließenden Abstimmung im Bundestag.",
+    "alltagsrelevanz": 2,
+    "warumRelevant": "Änderungen am Bundespolizeigesetz betreffen vor allem die Befugnisse und Arbeitsweise der Bundespolizei, etwa bei Kontrollen und Einsätzen, und wirken sich damit indirekt auf Reisende und Menschen im Kontakt mit der Bundespolizei aus."
   }
 ]

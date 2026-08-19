@@ -559,6 +559,11 @@
     "title": "Vergabebeschleunigungsgesetz",
     "seededOnly": true
   },
+  "984": {
+    "listDate": "18.12.2025",
+    "letzteAenderung": null,
+    "title": ""
+  },
   "985": {
     "listDate": "06.11.2025",
     "title": "Gesetz zur Abschaffung der Gasspeicherumlage",
@@ -1768,5 +1773,15 @@
     "listDate": "12.08.2026",
     "letzteAenderung": "12.08.2026",
     "title": "... Gesetz zur Änderung des Waffengesetzes - Ausgestaltung des unerlaubten Umgangs mit halbautomatischen Kurzwaffen zum Verschießen von Patronenmunition als Verbrechen"
+  },
+  "1362": {
+    "listDate": "13.08.2026",
+    "letzteAenderung": null,
+    "title": ""
+  },
+  "1363": {
+    "listDate": "17.08.2026",
+    "letzteAenderung": null,
+    "title": ""
   }
 }
